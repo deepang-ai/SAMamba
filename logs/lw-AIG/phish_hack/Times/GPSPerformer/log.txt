@@ -1,0 +1,617 @@
+Namespace(seed=15, model='GPSPerformer', dataset='phish_hack/Times', num_heads=1, num_layers=2, dim_hidden=64, dropout=0.1, epochs=1000, lr=0.0003, weight_decay=0.0001, batch_size=64, abs_pe=None, abs_pe_dim=20, num_class=2, outdir='./outdir/phish_hack/Times/seed15/edge_attr/khopgnn_gat_1_0.1_0.0003_0.0001_2_1_64_BN', warmup=10, layer_norm=False, use_edge_attr=True, edge_dim=128, gnn_type='gat', k_hop=1, global_pool='mean', se='khopgnn', ie='mamba', aggr='add', not_extract_node_feature=False, k_ford=3, early_stop=1, early_stop_mindelta=-0.0, patience=2, training_times=2, Lambda=0.01, order='sd', use_cuda=True, batch_norm=True, save_logs=True)
+Data(edge_index=[2, 248], edge_attr=[248, 2], x=[104, 14887], y=[1, 1], num_nodes=104)
+Data(edge_index=[2, 248], edge_attr=[248, 2], x=[104, 14887], y=[1, 1], num_nodes=104)
+Data(edge_index=[2, 218], edge_attr=[218, 2], x=[94, 14887], y=[1, 1], num_nodes=104)
+========================training times:0========================
+========================k_idx:0========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Model: GPSPerformer
+GPS(
+  (x_lin): Linear(in_features=14887, out_features=64, bias=True)
+  (pe_lin): Linear(in_features=20, out_features=8, bias=True)
+  (pe_norm): BatchNorm1d(20, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (convs): ModuleList(
+    (0-1): 2 x GPSConv(64, conv=GINEConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )), heads=1, attn_type=performer)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=64, out_features=32, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=32, out_features=16, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=16, out_features=2, bias=True)
+  )
+)
+Total number of parameters: 1039522
+Extracting 1-hop subgraphs...
+Done!
+<torch_geometric.deprecation.DataLoader object at 0x79dc9025ed70>
+Training...
+Epoch 1/1000, LR 0.000300
+Train loss: 0.7399;  Loss pred: 0.7399; Loss self: 0.0000; time: 10.45s
+Val loss: 0.6818 score: 0.5704 time: 4.29s
+Test loss: 0.6827 score: 0.5728 time: 3.67s
+Epoch 2/1000, LR 0.000029
+Train loss: 0.7288;  Loss pred: 0.7288; Loss self: 0.0000; time: 10.30s
+Val loss: 0.6105 score: 0.7278 time: 3.52s
+Test loss: 0.6155 score: 0.7296 time: 3.75s
+Epoch 3/1000, LR 0.000059
+Train loss: 0.6933;  Loss pred: 0.6933; Loss self: 0.0000; time: 9.35s
+Val loss: 0.5568 score: 0.5988 time: 3.70s
+Test loss: 0.5641 score: 0.5970 time: 3.49s
+Epoch 4/1000, LR 0.000089
+Train loss: 0.6596;  Loss pred: 0.6596; Loss self: 0.0000; time: 8.66s
+Val loss: 0.5304 score: 0.6343 time: 3.38s
+Test loss: 0.5494 score: 0.6065 time: 3.32s
+Epoch 5/1000, LR 0.000119
+Train loss: 0.6406;  Loss pred: 0.6406; Loss self: 0.0000; time: 9.78s
+Val loss: 0.5494 score: 0.7728 time: 5.46s
+Test loss: 0.5532 score: 0.7722 time: 3.80s
+     INFO: Early stopping counter 1 of 2
+Epoch 6/1000, LR 0.000149
+Train loss: 0.5822;  Loss pred: 0.5822; Loss self: 0.0000; time: 8.96s
+Val loss: 0.4392 score: 0.8444 time: 3.35s
+Test loss: 0.4565 score: 0.8302 time: 3.25s
+Epoch 7/1000, LR 0.000179
+Train loss: 0.4928;  Loss pred: 0.4928; Loss self: 0.0000; time: 9.49s
+Val loss: 0.5150 score: 0.7598 time: 3.38s
+Test loss: 0.5498 score: 0.7509 time: 3.46s
+     INFO: Early stopping counter 1 of 2
+Epoch 8/1000, LR 0.000209
+Train loss: 0.4401;  Loss pred: 0.4401; Loss self: 0.0000; time: 10.04s
+Val loss: 0.4233 score: 0.8527 time: 3.61s
+Test loss: 0.4820 score: 0.8462 time: 3.32s
+Epoch 9/1000, LR 0.000239
+Train loss: 0.3595;  Loss pred: 0.3595; Loss self: 0.0000; time: 8.74s
+Val loss: 0.4200 score: 0.8391 time: 3.72s
+Test loss: 0.3995 score: 0.8556 time: 3.62s
+Epoch 10/1000, LR 0.000269
+Train loss: 0.2249;  Loss pred: 0.2249; Loss self: 0.0000; time: 9.38s
+Val loss: 0.3877 score: 0.8485 time: 3.75s
+Test loss: 0.3736 score: 0.8473 time: 3.76s
+Epoch 11/1000, LR 0.000299
+Train loss: 0.1522;  Loss pred: 0.1522; Loss self: 0.0000; time: 9.03s
+Val loss: 0.6650 score: 0.7651 time: 3.38s
+Test loss: 0.6326 score: 0.7456 time: 3.25s
+     INFO: Early stopping counter 1 of 2
+Epoch 12/1000, LR 0.000299
+Train loss: 0.1007;  Loss pred: 0.1007; Loss self: 0.0000; time: 9.31s
+Val loss: 1.1044 score: 0.6669 time: 3.55s
+Test loss: 1.0887 score: 0.6497 time: 3.76s
+     INFO: Early stopping counter 2 of 2
+     INFO: Early stopping
+
+=====final results=====
+Exp: 1,  Epoch: 009,   Train_Loss: 0.2249,   Val_Loss: 0.3877,   Val_Precision: 0.9201,   Val_Recall: 0.7633,   Val_accuracy: 0.8344,   Val_Score: 0.8485,   Val_Loss: 0.3877,   Test_Precision: 0.9247,   Test_Recall: 0.7562,   Test_accuracy: 0.8320,   Test_Score: 0.8473,   Test_loss: 0.3736
+
+
+[3.6713714089710265, 3.7563785610254854, 3.4939779340056702, 3.3240309020038694, 3.810194459045306, 3.2577259589452296, 3.462970030028373, 3.325777531019412, 3.6286856869701296, 3.7683590739034116, 3.2590996749931946, 3.7675931439734995]
+[0.0021724091177343354, 0.002222709207707388, 0.0020674425645003966, 0.001966882190534834, 0.0022545529343463346, 0.0019276484964172956, 0.002049094692324481, 0.0019679156988280542, 0.0021471512940651654, 0.0022297982685819005, 0.0019284613461498193, 0.002229345055605621]
+[460.31845099367257, 449.901407045256, 483.6893740947299, 508.41885945801374, 443.5469155617458, 518.766778205979, 488.02039444336555, 508.15184847375644, 465.73336623462467, 448.4710630957556, 518.5481171279393, 448.56223467315215]
+Elapsed: 3.5438470304070506~0.20572765711430868
+Time per graph: 0.0020969509055663023~0.00012173234148775663
+Speed: 478.5107341173325~28.059997698429967
+Total Time: 3.7679
+best val loss: 0.3877276900780977 test_score: 0.8473
+
+Testing...
+Test loss: 0.4820 score: 0.8462 time: 4.12s
+test Score 0.8462
+Epoch Time List: [18.399749920121394, 17.57447862904519, 16.54174343997147, 15.35650204308331, 19.049324968946166, 15.566014916985296, 16.32821430498734, 16.96826764510479, 16.074513699975796, 16.887627301039174, 15.66047547699418, 16.618972026044503]
+Total Epoch List: [12]
+Total Time List: [3.7679406789829955]
+========================k_idx:1========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Model: GPSPerformer
+GPS(
+  (x_lin): Linear(in_features=14887, out_features=64, bias=True)
+  (pe_lin): Linear(in_features=20, out_features=8, bias=True)
+  (pe_norm): BatchNorm1d(20, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (convs): ModuleList(
+    (0-1): 2 x GPSConv(64, conv=GINEConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )), heads=1, attn_type=performer)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=64, out_features=32, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=32, out_features=16, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=16, out_features=2, bias=True)
+  )
+)
+Total number of parameters: 1039522
+Extracting 1-hop subgraphs...
+Done!
+<torch_geometric.deprecation.DataLoader object at 0x79dc9025f970>
+Training...
+Epoch 1/1000, LR 0.000300
+Train loss: 0.7187;  Loss pred: 0.7187; Loss self: 0.0000; time: 9.77s
+Val loss: 0.6078 score: 0.5964 time: 3.94s
+Test loss: 0.5977 score: 0.6000 time: 4.09s
+Epoch 2/1000, LR 0.000029
+Train loss: 0.6944;  Loss pred: 0.6944; Loss self: 0.0000; time: 9.52s
+Val loss: 0.5810 score: 0.6178 time: 3.57s
+Test loss: 0.5732 score: 0.6172 time: 3.72s
+Epoch 3/1000, LR 0.000059
+Train loss: 0.6598;  Loss pred: 0.6598; Loss self: 0.0000; time: 9.78s
+Val loss: 0.6023 score: 0.6994 time: 3.00s
+Test loss: 0.5982 score: 0.7136 time: 3.90s
+     INFO: Early stopping counter 1 of 2
+Epoch 4/1000, LR 0.000089
+Train loss: 0.6558;  Loss pred: 0.6558; Loss self: 0.0000; time: 8.86s
+Val loss: 0.6583 score: 0.6964 time: 3.61s
+Test loss: 0.6573 score: 0.7047 time: 3.74s
+     INFO: Early stopping counter 2 of 2
+     INFO: Early stopping
+
+=====final results=====
+Exp: 1,  Epoch: 001,   Train_Loss: 0.6944,   Val_Loss: 0.5810,   Val_Precision: 0.5736,   Val_Recall: 0.9172,   Val_accuracy: 0.7058,   Val_Score: 0.6178,   Val_Loss: 0.5810,   Test_Precision: 0.5731,   Test_Recall: 0.9183,   Test_accuracy: 0.7058,   Test_Score: 0.6172,   Test_loss: 0.5732
+
+
+[3.6713714089710265, 3.7563785610254854, 3.4939779340056702, 3.3240309020038694, 3.810194459045306, 3.2577259589452296, 3.462970030028373, 3.325777531019412, 3.6286856869701296, 3.7683590739034116, 3.2590996749931946, 3.7675931439734995, 4.09833859000355, 3.7279306600103155, 3.906144681968726, 3.7427951600402594]
+[0.0021724091177343354, 0.002222709207707388, 0.0020674425645003966, 0.001966882190534834, 0.0022545529343463346, 0.0019276484964172956, 0.002049094692324481, 0.0019679156988280542, 0.0021471512940651654, 0.0022297982685819005, 0.0019284613461498193, 0.002229345055605621, 0.0024250524201204437, 0.0022058761301836185, 0.002311328214182678, 0.0022146716923315143]
+[460.31845099367257, 449.901407045256, 483.6893740947299, 508.41885945801374, 443.5469155617458, 518.766778205979, 488.02039444336555, 508.15184847375644, 465.73336623462467, 448.4710630957556, 518.5481171279393, 448.56223467315215, 412.36222017433073, 453.33461218276085, 432.65166490152313, 451.5341950965389]
+Elapsed: 3.625085841056716~0.2390708754862095
+Time per graph: 0.0021450212077258673~0.00014146205650071567
+Speed: 468.25071886019657~31.229319097020877
+Total Time: 3.7431
+best val loss: 0.5810204220241344 test_score: 0.6172
+
+Testing...
+Test loss: 0.5982 score: 0.7136 time: 3.69s
+test Score 0.7136
+Epoch Time List: [18.399749920121394, 17.57447862904519, 16.54174343997147, 15.35650204308331, 19.049324968946166, 15.566014916985296, 16.32821430498734, 16.96826764510479, 16.074513699975796, 16.887627301039174, 15.66047547699418, 16.618972026044503, 17.79574125399813, 16.805733118089847, 16.679290833999403, 16.207978909253143]
+Total Epoch List: [12, 4]
+Total Time List: [3.7679406789829955, 3.743097763042897]
+========================k_idx:2========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Model: GPSPerformer
+GPS(
+  (x_lin): Linear(in_features=14887, out_features=64, bias=True)
+  (pe_lin): Linear(in_features=20, out_features=8, bias=True)
+  (pe_norm): BatchNorm1d(20, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (convs): ModuleList(
+    (0-1): 2 x GPSConv(64, conv=GINEConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )), heads=1, attn_type=performer)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=64, out_features=32, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=32, out_features=16, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=16, out_features=2, bias=True)
+  )
+)
+Total number of parameters: 1039522
+Extracting 1-hop subgraphs...
+Done!
+<torch_geometric.deprecation.DataLoader object at 0x79dc9025fe20>
+Training...
+Epoch 1/1000, LR 0.000300
+Train loss: 0.7473;  Loss pred: 0.7473; Loss self: 0.0000; time: 9.61s
+Val loss: 1.2030 score: 0.4988 time: 3.48s
+Test loss: 1.2110 score: 0.5012 time: 3.60s
+Epoch 2/1000, LR 0.000029
+Train loss: 0.7106;  Loss pred: 0.7106; Loss self: 0.0000; time: 9.46s
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Val loss: 1.0948 score: 0.5000 time: 3.71s
+Test loss: 1.1062 score: 0.5000 time: 3.73s
+Epoch 3/1000, LR 0.000059
+Train loss: 0.6777;  Loss pred: 0.6777; Loss self: 0.0000; time: 8.93s
+Val loss: 0.8615 score: 0.5302 time: 3.44s
+Test loss: 0.8775 score: 0.5183 time: 3.40s
+Epoch 4/1000, LR 0.000089
+Train loss: 0.6138;  Loss pred: 0.6138; Loss self: 0.0000; time: 8.93s
+Val loss: 0.8063 score: 0.5692 time: 3.42s
+Test loss: 0.8181 score: 0.5533 time: 3.49s
+Epoch 5/1000, LR 0.000119
+Train loss: 0.6000;  Loss pred: 0.6000; Loss self: 0.0000; time: 9.97s
+Val loss: 0.5554 score: 0.7953 time: 3.86s
+Test loss: 0.5531 score: 0.8024 time: 3.92s
+Epoch 6/1000, LR 0.000149
+Train loss: 0.5339;  Loss pred: 0.5339; Loss self: 0.0000; time: 9.57s
+Val loss: 0.4604 score: 0.8308 time: 3.28s
+Test loss: 0.4976 score: 0.7710 time: 3.30s
+Epoch 7/1000, LR 0.000179
+Train loss: 0.4640;  Loss pred: 0.4640; Loss self: 0.0000; time: 9.11s
+Val loss: 0.4905 score: 0.8533 time: 3.45s
+Test loss: 0.5841 score: 0.8154 time: 3.37s
+     INFO: Early stopping counter 1 of 2
+Epoch 8/1000, LR 0.000209
+Train loss: 0.3893;  Loss pred: 0.3893; Loss self: 0.0000; time: 8.97s
+Val loss: 0.4769 score: 0.7840 time: 3.55s
+Test loss: 0.5198 score: 0.7834 time: 3.23s
+     INFO: Early stopping counter 2 of 2
+     INFO: Early stopping
+
+=====final results=====
+Exp: 1,  Epoch: 005,   Train_Loss: 0.5339,   Val_Loss: 0.4604,   Val_Precision: 0.7902,   Val_Recall: 0.9006,   Val_accuracy: 0.8418,   Val_Score: 0.8308,   Val_Loss: 0.4604,   Test_Precision: 0.7263,   Test_Recall: 0.8698,   Test_accuracy: 0.7916,   Test_Score: 0.7710,   Test_loss: 0.4976
+
+
+[3.6713714089710265, 3.7563785610254854, 3.4939779340056702, 3.3240309020038694, 3.810194459045306, 3.2577259589452296, 3.462970030028373, 3.325777531019412, 3.6286856869701296, 3.7683590739034116, 3.2590996749931946, 3.7675931439734995, 4.09833859000355, 3.7279306600103155, 3.906144681968726, 3.7427951600402594, 3.610645828070119, 3.7310419830027968, 3.4047098649898544, 3.4949008950497955, 3.9252310000592843, 3.3003071770071983, 3.3709379920037463, 3.2371131639229134]
+[0.0021724091177343354, 0.002222709207707388, 0.0020674425645003966, 0.001966882190534834, 0.0022545529343463346, 0.0019276484964172956, 0.002049094692324481, 0.0019679156988280542, 0.0021471512940651654, 0.0022297982685819005, 0.0019284613461498193, 0.002229345055605621, 0.0024250524201204437, 0.0022058761301836185, 0.002311328214182678, 0.0022146716923315143, 0.0021364768213432655, 0.002207717149705797, 0.002014621221887488, 0.002067988695295737, 0.0023226218935262035, 0.001952844483436212, 0.001994637865090974, 0.0019154515762857475]
+[460.31845099367257, 449.901407045256, 483.6893740947299, 508.41885945801374, 443.5469155617458, 518.766778205979, 488.02039444336555, 508.15184847375644, 465.73336623462467, 448.4710630957556, 518.5481171279393, 448.56223467315215, 412.36222017433073, 453.33461218276085, 432.65166490152313, 451.5341950965389, 468.06030845271266, 452.95657558907004, 496.3712231042148, 483.56163758283645, 430.54790914839793, 512.0735462971463, 501.3441374504292, 522.0701021004667]
+Elapsed: 3.586510890042215~0.23860677425192872
+Time per graph: 0.002122195792924388~0.00014118744038575662
+Speed: 473.2915392286841~31.34968471212708
+Total Time: 3.2374
+best val loss: 0.46041095863432574 test_score: 0.7710
+
+Testing...
+Test loss: 0.5841 score: 0.8154 time: 3.28s
+test Score 0.8154
+Epoch Time List: [18.399749920121394, 17.57447862904519, 16.54174343997147, 15.35650204308331, 19.049324968946166, 15.566014916985296, 16.32821430498734, 16.96826764510479, 16.074513699975796, 16.887627301039174, 15.66047547699418, 16.618972026044503, 17.79574125399813, 16.805733118089847, 16.679290833999403, 16.207978909253143, 16.702286113984883, 16.89578061911743, 15.771989790024236, 15.84178534685634, 17.749367863987572, 16.152232150896452, 15.927594264037907, 15.750945849926211]
+Total Epoch List: [12, 4, 8]
+Total Time List: [3.7679406789829955, 3.743097763042897, 3.2374367169104517]
+========================training times:1========================
+========================k_idx:0========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Model: GPSPerformer
+GPS(
+  (x_lin): Linear(in_features=14887, out_features=64, bias=True)
+  (pe_lin): Linear(in_features=20, out_features=8, bias=True)
+  (pe_norm): BatchNorm1d(20, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (convs): ModuleList(
+    (0-1): 2 x GPSConv(64, conv=GINEConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )), heads=1, attn_type=performer)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=64, out_features=32, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=32, out_features=16, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=16, out_features=2, bias=True)
+  )
+)
+Total number of parameters: 1039522
+Extracting 1-hop subgraphs...
+Done!
+<torch_geometric.deprecation.DataLoader object at 0x79dc90e3cb50>
+Training...
+Epoch 1/1000, LR 0.000300
+Train loss: 0.9948;  Loss pred: 0.9948; Loss self: 0.0000; time: 10.18s
+Val loss: 1.0468 score: 0.3385 time: 3.82s
+Test loss: 1.0569 score: 0.3272 time: 3.67s
+Epoch 2/1000, LR 0.000029
+Train loss: 0.9113;  Loss pred: 0.9113; Loss self: 0.0000; time: 9.56s
+Val loss: 0.9375 score: 0.2746 time: 3.75s
+Test loss: 0.9216 score: 0.2834 time: 3.56s
+Epoch 3/1000, LR 0.000059
+Train loss: 0.8348;  Loss pred: 0.8348; Loss self: 0.0000; time: 9.76s
+Val loss: 0.7524 score: 0.3538 time: 4.30s
+Test loss: 0.7531 score: 0.3544 time: 4.12s
+Epoch 4/1000, LR 0.000089
+Train loss: 0.7602;  Loss pred: 0.7602; Loss self: 0.0000; time: 9.83s
+Val loss: 0.7828 score: 0.4213 time: 3.51s
+Test loss: 0.7630 score: 0.4355 time: 3.61s
+     INFO: Early stopping counter 1 of 2
+Epoch 5/1000, LR 0.000119
+Train loss: 0.7054;  Loss pred: 0.7054; Loss self: 0.0000; time: 9.35s
+Val loss: 0.5725 score: 0.5604 time: 3.40s
+Test loss: 0.5875 score: 0.5456 time: 3.51s
+Epoch 6/1000, LR 0.000149
+Train loss: 0.6430;  Loss pred: 0.6430; Loss self: 0.0000; time: 9.07s
+Val loss: 0.6909 score: 0.6000 time: 3.65s
+Test loss: 0.6848 score: 0.6024 time: 3.39s
+     INFO: Early stopping counter 1 of 2
+Epoch 7/1000, LR 0.000179
+Train loss: 0.5504;  Loss pred: 0.5504; Loss self: 0.0000; time: 9.23s
+Val loss: 0.5443 score: 0.6604 time: 3.82s
+Test loss: 0.5693 score: 0.6722 time: 3.72s
+Epoch 8/1000, LR 0.000209
+Train loss: 0.4982;  Loss pred: 0.4982; Loss self: 0.0000; time: 9.79s
+Val loss: 0.6028 score: 0.7420 time: 3.80s
+Test loss: 0.5635 score: 0.7734 time: 4.03s
+     INFO: Early stopping counter 1 of 2
+Epoch 9/1000, LR 0.000239
+Train loss: 0.3837;  Loss pred: 0.3837; Loss self: 0.0000; time: 9.57s
+Val loss: 0.4039 score: 0.8213 time: 3.65s
+Test loss: 0.4117 score: 0.8296 time: 3.36s
+Epoch 10/1000, LR 0.000269
+Train loss: 0.2960;  Loss pred: 0.2960; Loss self: 0.0000; time: 9.18s
+Val loss: 0.4990 score: 0.7716 time: 3.64s
+Test loss: 0.5035 score: 0.8000 time: 3.40s
+     INFO: Early stopping counter 1 of 2
+Epoch 11/1000, LR 0.000299
+Train loss: 0.2193;  Loss pred: 0.2193; Loss self: 0.0000; time: 9.64s
+Val loss: 0.3564 score: 0.8444 time: 3.52s
+Test loss: 0.3334 score: 0.8621 time: 3.55s
+Epoch 12/1000, LR 0.000299
+Train loss: 0.1231;  Loss pred: 0.1231; Loss self: 0.0000; time: 8.90s
+Val loss: 0.9100 score: 0.6828 time: 3.52s
+Test loss: 0.9049 score: 0.6882 time: 3.47s
+     INFO: Early stopping counter 1 of 2
+Epoch 13/1000, LR 0.000299
+Train loss: 0.0747;  Loss pred: 0.0747; Loss self: 0.0000; time: 9.25s
+Val loss: 1.4069 score: 0.6544 time: 3.64s
+Test loss: 1.3908 score: 0.6627 time: 3.55s
+     INFO: Early stopping counter 2 of 2
+     INFO: Early stopping
+
+=====final results=====
+Exp: 1,  Epoch: 010,   Train_Loss: 0.2193,   Val_Loss: 0.3564,   Val_Precision: 0.8163,   Val_Recall: 0.8888,   Val_accuracy: 0.8510,   Val_Score: 0.8444,   Val_Loss: 0.3564,   Test_Precision: 0.8341,   Test_Recall: 0.9041,   Test_accuracy: 0.8677,   Test_Score: 0.8621,   Test_loss: 0.3334
+
+
+[3.679637879016809, 3.569871057989076, 4.123106593964621, 3.6146636829944327, 3.5149700089823455, 3.3958793649217114, 3.7287154380464926, 4.035854240064509, 3.3670844399603084, 3.400724233011715, 3.5528399400645867, 3.4802668200572953, 3.559427337953821]
+[0.0021773005201282895, 0.0021123497384550743, 0.002439708043766048, 0.002138854250292564, 0.002079863910640441, 0.0020093960739181725, 0.0022063404958854987, 0.0023880794319908337, 0.0019923576567812476, 0.002012262859770246, 0.002102272153884371, 0.002059329479323843, 0.002106170022457882]
+[459.2843251335276, 473.4064543361923, 409.8851100463451, 467.5400391883714, 480.80068839315334, 497.66196569204726, 453.2391994186089, 418.74654025487973, 501.9179144850677, 496.9529677222076, 475.6758054147741, 485.594952162943, 474.7954767834976]
+Elapsed: 3.6171570028482867~0.2227239431410345
+Time per graph: 0.0021403295874841926~0.00013178931546806773
+Speed: 468.88472607935495~27.122828268734718
+Total Time: 3.5598
+best val loss: 0.3563936758323534 test_score: 0.8621
+
+Testing...
+Test loss: 0.3334 score: 0.8621 time: 3.50s
+test Score 0.8621
+Epoch Time List: [17.667279657907784, 16.878349715145305, 18.176182285998948, 16.94829239102546, 16.256285667885095, 16.116114756907336, 16.774203226086684, 17.619638539850712, 16.579962777905166, 16.214689144981094, 16.704748563934118, 15.886341180070303, 16.444297045003623]
+Total Epoch List: [13]
+Total Time List: [3.559770256979391]
+========================k_idx:1========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Model: GPSPerformer
+GPS(
+  (x_lin): Linear(in_features=14887, out_features=64, bias=True)
+  (pe_lin): Linear(in_features=20, out_features=8, bias=True)
+  (pe_norm): BatchNorm1d(20, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (convs): ModuleList(
+    (0-1): 2 x GPSConv(64, conv=GINEConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )), heads=1, attn_type=performer)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=64, out_features=32, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=32, out_features=16, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=16, out_features=2, bias=True)
+  )
+)
+Total number of parameters: 1039522
+Extracting 1-hop subgraphs...
+Done!
+<torch_geometric.deprecation.DataLoader object at 0x79dc90267b20>
+Training...
+Epoch 1/1000, LR 0.000300
+Train loss: 0.8555;  Loss pred: 0.8555; Loss self: 0.0000; time: 9.76s
+Val loss: 1.0202 score: 0.4592 time: 3.88s
+Test loss: 1.0517 score: 0.4473 time: 3.87s
+Epoch 2/1000, LR 0.000029
+Train loss: 0.7665;  Loss pred: 0.7665; Loss self: 0.0000; time: 8.72s
+Val loss: 0.9171 score: 0.4604 time: 3.30s
+Test loss: 0.9363 score: 0.4503 time: 3.97s
+Epoch 3/1000, LR 0.000059
+Train loss: 0.6887;  Loss pred: 0.6887; Loss self: 0.0000; time: 10.31s
+Val loss: 0.8601 score: 0.4207 time: 3.87s
+Test loss: 0.8700 score: 0.4160 time: 3.84s
+Epoch 4/1000, LR 0.000089
+Train loss: 0.6723;  Loss pred: 0.6723; Loss self: 0.0000; time: 9.64s
+Val loss: 0.7735 score: 0.5012 time: 4.06s
+Test loss: 0.7819 score: 0.5018 time: 3.74s
+Epoch 5/1000, LR 0.000119
+Train loss: 0.6368;  Loss pred: 0.6368; Loss self: 0.0000; time: 9.77s
+Val loss: 0.8038 score: 0.6065 time: 3.88s
+Test loss: 0.7939 score: 0.5840 time: 3.94s
+     INFO: Early stopping counter 1 of 2
+Epoch 6/1000, LR 0.000149
+Train loss: 0.6146;  Loss pred: 0.6146; Loss self: 0.0000; time: 8.84s
+Val loss: 0.5761 score: 0.8361 time: 3.40s
+Test loss: 0.5698 score: 0.8290 time: 3.49s
+Epoch 7/1000, LR 0.000179
+Train loss: 0.5333;  Loss pred: 0.5333; Loss self: 0.0000; time: 8.68s
+Val loss: 0.5997 score: 0.7367 time: 3.56s
+Test loss: 0.5485 score: 0.7527 time: 3.62s
+     INFO: Early stopping counter 1 of 2
+Epoch 8/1000, LR 0.000209
+Train loss: 0.4757;  Loss pred: 0.4757; Loss self: 0.0000; time: 9.32s
+Val loss: 0.4582 score: 0.8065 time: 3.54s
+Test loss: 0.4602 score: 0.8059 time: 3.50s
+Epoch 9/1000, LR 0.000239
+Train loss: 0.3716;  Loss pred: 0.3716; Loss self: 0.0000; time: 8.81s
+Val loss: 0.7414 score: 0.7657 time: 3.39s
+Test loss: 0.6247 score: 0.7710 time: 3.37s
+     INFO: Early stopping counter 1 of 2
+Epoch 10/1000, LR 0.000269
+Train loss: 0.2971;  Loss pred: 0.2971; Loss self: 0.0000; time: 8.94s
+Val loss: 0.5893 score: 0.7379 time: 3.48s
+Test loss: 0.6091 score: 0.7024 time: 3.46s
+     INFO: Early stopping counter 2 of 2
+     INFO: Early stopping
+
+=====final results=====
+Exp: 1,  Epoch: 007,   Train_Loss: 0.4757,   Val_Loss: 0.4582,   Val_Precision: 0.7524,   Val_Recall: 0.9136,   Val_accuracy: 0.8252,   Val_Score: 0.8065,   Val_Loss: 0.4582,   Test_Precision: 0.7474,   Test_Recall: 0.9243,   Test_accuracy: 0.8265,   Test_Score: 0.8059,   Test_loss: 0.4602
+
+
+[3.679637879016809, 3.569871057989076, 4.123106593964621, 3.6146636829944327, 3.5149700089823455, 3.3958793649217114, 3.7287154380464926, 4.035854240064509, 3.3670844399603084, 3.400724233011715, 3.5528399400645867, 3.4802668200572953, 3.559427337953821, 3.8789693180005997, 3.971905385958962, 3.8500480969669297, 3.7507754950784147, 3.946643430972472, 3.496697267051786, 3.625341805978678, 3.50215003604535, 3.3776344700017944, 3.4641939570428804]
+[0.0021773005201282895, 0.0021123497384550743, 0.002439708043766048, 0.002138854250292564, 0.002079863910640441, 0.0020093960739181725, 0.0022063404958854987, 0.0023880794319908337, 0.0019923576567812476, 0.002012262859770246, 0.002102272153884371, 0.002059329479323843, 0.002106170022457882, 0.002295248117160118, 0.002350239873348498, 0.002278134968619485, 0.002219393784070068, 0.0023352919709896283, 0.0020690516373087493, 0.002145172666259573, 0.0020722781278374853, 0.0019986002781075705, 0.0020498189094928284]
+[459.2843251335276, 473.4064543361923, 409.8851100463451, 467.5400391883714, 480.80068839315334, 497.66196569204726, 453.2391994186089, 418.74654025487973, 501.9179144850677, 496.9529677222076, 475.6758054147741, 485.594952162943, 474.7954767834976, 435.68274493882933, 425.488483681988, 438.95555521277333, 450.5734886605546, 428.21198052431504, 483.3132155661021, 466.16294143988347, 482.5607077383694, 500.3501755472972, 487.8479729935863]
+Elapsed: 3.647278273918504~0.2194487334775834
+Time per graph: 0.0021581528248038485~0.00012985132158436884
+Speed: 464.9847263189267~27.056163065338737
+Total Time: 3.4645
+best val loss: 0.4581684573162237 test_score: 0.8059
+
+Testing...
+Test loss: 0.5698 score: 0.8290 time: 3.58s
+test Score 0.8290
+Epoch Time List: [17.667279657907784, 16.878349715145305, 18.176182285998948, 16.94829239102546, 16.256285667885095, 16.116114756907336, 16.774203226086684, 17.619638539850712, 16.579962777905166, 16.214689144981094, 16.704748563934118, 15.886341180070303, 16.444297045003623, 17.51419753592927, 15.986849284847267, 18.023949073860422, 17.44431547401473, 17.596467552008107, 15.726396281039342, 15.86102905194275, 16.352423089905642, 15.57556745200418, 15.880563507089391]
+Total Epoch List: [13, 10]
+Total Time List: [3.559770256979391, 3.4644752599997446]
+========================k_idx:2========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Model: GPSPerformer
+GPS(
+  (x_lin): Linear(in_features=14887, out_features=64, bias=True)
+  (pe_lin): Linear(in_features=20, out_features=8, bias=True)
+  (pe_norm): BatchNorm1d(20, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (convs): ModuleList(
+    (0-1): 2 x GPSConv(64, conv=GINEConv(nn=Sequential(
+      (0): Linear(in_features=64, out_features=64, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=64, out_features=64, bias=True)
+    )), heads=1, attn_type=performer)
+  )
+  (classifier): Sequential(
+    (0): Linear(in_features=64, out_features=32, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=32, out_features=16, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=16, out_features=2, bias=True)
+  )
+)
+Total number of parameters: 1039522
+Extracting 1-hop subgraphs...
+Done!
+<torch_geometric.deprecation.DataLoader object at 0x79dc90266650>
+Training...
+Epoch 1/1000, LR 0.000300
+Train loss: 0.8305;  Loss pred: 0.8305; Loss self: 0.0000; time: 10.16s
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Val loss: 1.0839 score: 0.5000 time: 3.81s
+Test loss: 1.1147 score: 0.5006 time: 3.91s
+Epoch 2/1000, LR 0.000029
+Train loss: 0.7883;  Loss pred: 0.7883; Loss self: 0.0000; time: 9.18s
+Val loss: 0.7446 score: 0.5302 time: 3.49s
+Test loss: 0.7538 score: 0.5331 time: 3.55s
+Epoch 3/1000, LR 0.000059
+Train loss: 0.7212;  Loss pred: 0.7212; Loss self: 0.0000; time: 10.01s
+Val loss: 0.7458 score: 0.5479 time: 3.91s
+Test loss: 0.7759 score: 0.5485 time: 4.08s
+     INFO: Early stopping counter 1 of 2
+Epoch 4/1000, LR 0.000089
+Train loss: 0.6766;  Loss pred: 0.6766; Loss self: 0.0000; time: 10.03s
+Val loss: 0.6408 score: 0.7947 time: 3.83s
+Test loss: 0.6579 score: 0.7556 time: 3.51s
+Epoch 5/1000, LR 0.000119
+Train loss: 0.5827;  Loss pred: 0.5827; Loss self: 0.0000; time: 9.73s
+Val loss: 0.6638 score: 0.7349 time: 3.95s
+Test loss: 0.7443 score: 0.6893 time: 3.85s
+     INFO: Early stopping counter 1 of 2
+Epoch 6/1000, LR 0.000149
+Train loss: 0.5217;  Loss pred: 0.5217; Loss self: 0.0000; time: 9.38s
+Val loss: 0.4431 score: 0.8331 time: 3.38s
+Test loss: 0.4853 score: 0.7876 time: 3.32s
+Epoch 7/1000, LR 0.000179
+Train loss: 0.4121;  Loss pred: 0.4121; Loss self: 0.0000; time: 9.32s
+Val loss: 0.3987 score: 0.8580 time: 3.92s
+Test loss: 0.4560 score: 0.8237 time: 4.25s
+Epoch 8/1000, LR 0.000209
+Train loss: 0.3206;  Loss pred: 0.3206; Loss self: 0.0000; time: 9.04s
+Val loss: 0.4083 score: 0.8349 time: 3.60s
+Test loss: 0.4846 score: 0.8349 time: 3.63s
+     INFO: Early stopping counter 1 of 2
+Epoch 9/1000, LR 0.000239
+Train loss: 0.2747;  Loss pred: 0.2747; Loss self: 0.0000; time: 9.95s
+Val loss: 0.3356 score: 0.8675 time: 4.24s
+Test loss: 0.3813 score: 0.8609 time: 3.80s
+Epoch 10/1000, LR 0.000269
+Train loss: 0.1796;  Loss pred: 0.1796; Loss self: 0.0000; time: 9.17s
+Val loss: 0.4016 score: 0.8462 time: 3.53s
+Test loss: 0.4688 score: 0.8432 time: 3.52s
+     INFO: Early stopping counter 1 of 2
+Epoch 11/1000, LR 0.000299
+Train loss: 0.1333;  Loss pred: 0.1333; Loss self: 0.0000; time: 9.67s
+Val loss: 0.6648 score: 0.7479 time: 3.57s
+Test loss: 0.7311 score: 0.7225 time: 3.42s
+     INFO: Early stopping counter 2 of 2
+     INFO: Early stopping
+
+=====final results=====
+Exp: 1,  Epoch: 008,   Train_Loss: 0.2747,   Val_Loss: 0.3356,   Val_Precision: 0.8532,   Val_Recall: 0.8876,   Val_accuracy: 0.8701,   Val_Score: 0.8675,   Val_Loss: 0.3356,   Test_Precision: 0.8522,   Test_Recall: 0.8734,   Test_accuracy: 0.8627,   Test_Score: 0.8609,   Test_loss: 0.3813
+
+
+[3.679637879016809, 3.569871057989076, 4.123106593964621, 3.6146636829944327, 3.5149700089823455, 3.3958793649217114, 3.7287154380464926, 4.035854240064509, 3.3670844399603084, 3.400724233011715, 3.5528399400645867, 3.4802668200572953, 3.559427337953821, 3.8789693180005997, 3.971905385958962, 3.8500480969669297, 3.7507754950784147, 3.946643430972472, 3.496697267051786, 3.625341805978678, 3.50215003604535, 3.3776344700017944, 3.4641939570428804, 3.9155819789739326, 3.5516349399695173, 4.086140844039619, 3.5199326190631837, 3.8582225360441953, 3.3255943789845333, 4.260812095017172, 3.636494637001306, 3.805585653986782, 3.5263288510032, 3.4283990329131484]
+[0.0021773005201282895, 0.0021123497384550743, 0.002439708043766048, 0.002138854250292564, 0.002079863910640441, 0.0020093960739181725, 0.0022063404958854987, 0.0023880794319908337, 0.0019923576567812476, 0.002012262859770246, 0.002102272153884371, 0.002059329479323843, 0.002106170022457882, 0.002295248117160118, 0.002350239873348498, 0.002278134968619485, 0.002219393784070068, 0.0023352919709896283, 0.0020690516373087493, 0.002145172666259573, 0.0020722781278374853, 0.0019986002781075705, 0.0020498189094928284, 0.002316912413594043, 0.0021015591360766376, 0.0024178348189583545, 0.002082800366309576, 0.0022829719148190503, 0.0019678073248429193, 0.0025211905887675577, 0.0021517719745569857, 0.0022518258307614096, 0.0020865851189368046, 0.0020286384810136973]
+[459.2843251335276, 473.4064543361923, 409.8851100463451, 467.5400391883714, 480.80068839315334, 497.66196569204726, 453.2391994186089, 418.74654025487973, 501.9179144850677, 496.9529677222076, 475.6758054147741, 485.594952162943, 474.7954767834976, 435.68274493882933, 425.488483681988, 438.95555521277333, 450.5734886605546, 428.21198052431504, 483.3132155661021, 466.16294143988347, 482.5607077383694, 500.3501755472972, 487.8479729935863, 431.60889213277557, 475.83719288855315, 413.5931835206251, 480.1228270243954, 438.02553746232155, 508.17983416126646, 396.6380028765828, 464.73325790288885, 444.08407894578164, 479.25195618645, 492.94145278182174]
+Elapsed: 3.6706508196212404~0.24199676388419566
+Time per graph: 0.002171982733503693~0.00014319335141076665
+Speed: 462.34308591819934~29.39961169823118
+Total Time: 3.4289
+best val loss: 0.335609454516123 test_score: 0.8609
+
+Testing...
+Test loss: 0.3813 score: 0.8609 time: 3.36s
+test Score 0.8609
+Epoch Time List: [17.667279657907784, 16.878349715145305, 18.176182285998948, 16.94829239102546, 16.256285667885095, 16.116114756907336, 16.774203226086684, 17.619638539850712, 16.579962777905166, 16.214689144981094, 16.704748563934118, 15.886341180070303, 16.444297045003623, 17.51419753592927, 15.986849284847267, 18.023949073860422, 17.44431547401473, 17.596467552008107, 15.726396281039342, 15.86102905194275, 16.352423089905642, 15.57556745200418, 15.880563507089391, 17.879342039930634, 16.21239490713924, 18.000102021032944, 17.378069984028116, 17.532296383054927, 16.080251417006366, 17.48899875395, 16.27355515700765, 17.997592619038187, 16.21767912595533, 16.65750248695258]
+Total Epoch List: [13, 10, 11]
+Total Time List: [3.559770256979391, 3.4644752599997446, 3.4288664649939165]
+T-times Epoch Time: 16.729857250092227 ~ 0.0920818131559713
+T-times Total Epoch: 9.666666666666668 ~ 1.666666666666667
+T-times Total Time: 3.5335978568182327 ~ 0.049227196160548825
+T-times Inference Elapsed: 3.6285808548317275 ~ 0.04206996478951264
+T-times Time Per Graph: 0.0021470892632140404 ~ 2.4893470289652497e-05
+T-times Speed: 467.8173125734417 ~ 5.474226655242376
+T-times cross validation test micro f1 score:0.814367202485319 ~ 0.04891518737672579
+T-times cross validation test precision:0.7762952619866141 ~ 0.03491258861501012
+T-times cross validation test recall:0.8743589743589744 ~ 0.026232741617357003
+T-times cross validation test f1_score:0.814367202485319 ~ 0.03789855040886231

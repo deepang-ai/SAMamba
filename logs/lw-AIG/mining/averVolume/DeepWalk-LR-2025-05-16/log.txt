@@ -1,0 +1,126 @@
+Namespace(seed=60, embedding='DeepWalk', model='LR', dataset='mining/averVolume', not_extract_node_feature=False, aggr='add', num_class=2, k_hop=1, use_edge_attr=True, se='khopgnn', k_ford=3, training_times=3)
+Data(edge_index=[2, 436], edge_attr=[436, 2], x=[115, 14887], y=[1, 1], num_nodes=115)
+========================training times:0========================
+========================k_idx:0========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/liyunhao/YJ_C/SAMamba-master/embed_lw_aig.py:208: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:261.)
+  node_embeddings = torch.tensor(node_embeddings, dtype=torch.float)
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+========================k_idx:1========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+========================k_idx:2========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+Three-fold cross-validation F1 score: 0.6259649122807017
+Three-fold cross-validation precision: 0.6603641456582633
+Three-fold cross-validation recall: 0.6132756132756133
+Three-fold cross-validation micro F1 score: 0.645877378435518
+========================training times:1========================
+========================k_idx:0========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+========================k_idx:1========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+========================k_idx:2========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+Three-fold cross-validation F1 score: 0.6731736172729962
+Three-fold cross-validation precision: 0.6475308641975309
+Three-fold cross-validation recall: 0.7077922077922079
+Three-fold cross-validation micro F1 score: 0.6541578576462298
+========================training times:2========================
+========================k_idx:0========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+========================k_idx:1========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+========================k_idx:2========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+Three-fold cross-validation F1 score: 0.6762859362859364
+Three-fold cross-validation precision: 0.6772013153087322
+Three-fold cross-validation recall: 0.6911976911976913
+Three-fold cross-validation micro F1 score: 0.6691331923890064
+[[0.6818181818181818, 0.6744186046511628, 0.5813953488372093], [0.6136363636363636, 0.7209302325581395, 0.627906976744186], [0.6818181818181818, 0.7441860465116278, 0.5813953488372093]]
+[[0.6428571428571429, 0.75, 0.5882352941176471], [0.5925925925925926, 0.75, 0.6], [0.6428571428571429, 0.8235294117647058, 0.5652173913043478]]
+[[0.8181818181818182, 0.5454545454545454, 0.47619047619047616], [0.7272727272727273, 0.6818181818181818, 0.7142857142857143], [0.8181818181818182, 0.6363636363636364, 0.6190476190476191]]
+[[0.7200000000000001, 0.631578947368421, 0.5263157894736842], [0.6530612244897959, 0.7142857142857143, 0.6521739130434783], [0.7200000000000001, 0.717948717948718, 0.5909090909090909]]
+T-times cross validation test micro f1 score:0.6563894761569181 ~ 0.009624389557880244
+T-times cross validation test precision:0.6616987750548421 ~ 0.012149618485236626
+T-times cross validation test recall:0.6707551707551708 ~ 0.04120492803282748
+T-times cross validation test f1 score:0.6584748219465447 ~ 0.02302306527912871

@@ -1,0 +1,999 @@
+Namespace(seed=60, embedding='Node2Vec', model='LR', dataset='ico_wallets/Volume', not_extract_node_feature=False, aggr='add', num_class=2, k_hop=1, use_edge_attr=True, se='khopgnn', k_ford=3, training_times=3)
+Data(edge_index=[2, 334], edge_attr=[334, 2], x=[97, 14887], y=[1, 1], num_nodes=97)
+========================training times:0========================
+========================k_idx:0========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 6485.69it/s]
+/liyunhao/YJ_C/SAMamba-master/embed_lw_aig.py:216: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:261.)
+  node_embeddings = torch.tensor(node_embeddings, dtype=torch.float)
+Computing transition probabilities:   0%|          | 0/51 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 51/51 [00:00<00:00, 2108.00it/s]
+Computing transition probabilities:   0%|          | 0/73 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 73/73 [00:00<00:00, 3140.32it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 8149.22it/s]
+Computing transition probabilities:   0%|          | 0/92 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 92/92 [00:00<00:00, 5879.21it/s]
+Computing transition probabilities:   0%|          | 0/44 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 44/44 [00:00<00:00, 4301.55it/s]
+Computing transition probabilities:   0%|          | 0/76 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 76/76 [00:00<00:00, 3534.40it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 9544.44it/s]
+Computing transition probabilities:   0%|          | 0/180 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 180/180 [00:00<00:00, 2587.45it/s]
+Computing transition probabilities:   0%|          | 0/119 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 119/119 [00:00<00:00, 5171.07it/s]
+Computing transition probabilities:   0%|          | 0/46 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 46/46 [00:00<00:00, 12826.62it/s]
+Computing transition probabilities:   0%|          | 0/21 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 21/21 [00:00<00:00, 14766.20it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 12171.17it/s]
+Computing transition probabilities:   0%|          | 0/71 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 71/71 [00:00<00:00, 8427.54it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 6654.17it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 20106.92it/s]
+Computing transition probabilities:   0%|          | 0/135 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 135/135 [00:00<00:00, 7670.74it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 8255.38it/s]
+Computing transition probabilities:   0%|          | 0/106 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 106/106 [00:00<00:00, 1547.24it/s]
+Computing transition probabilities:   0%|          | 0/69 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 69/69 [00:00<00:00, 5086.33it/s]
+Computing transition probabilities:   0%|          | 0/74 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 74/74 [00:00<00:00, 9483.87it/s]
+Computing transition probabilities:   0%|          | 0/14 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 14/14 [00:00<00:00, 6780.63it/s]
+Computing transition probabilities:   0%|          | 0/57 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 57/57 [00:00<00:00, 6165.07it/s]
+Computing transition probabilities:   0%|          | 0/107 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 107/107 [00:00<00:00, 3077.60it/s]
+Computing transition probabilities:   0%|          | 0/19 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 19/19 [00:00<00:00, 6845.20it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 14053.41it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 16710.37it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 16384.00it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 10672.53it/s]
+Computing transition probabilities:   0%|          | 0/2 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 2/2 [00:00<00:00, 14614.30it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 10598.37it/s]
+Computing transition probabilities:   0%|          | 0/28 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 28/28 [00:00<00:00, 8685.79it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 12069.94it/s]
+Computing transition probabilities:   0%|          | 0/18 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 18/18 [00:00<00:00, 10210.64it/s]
+Computing transition probabilities:   0%|          | 0/6 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 6/6 [00:00<00:00, 13880.76it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 15409.93it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 10492.32it/s]
+Computing transition probabilities:   0%|          | 0/38 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 38/38 [00:00<00:00, 5824.57it/s]
+Computing transition probabilities:   0%|          | 0/64 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 64/64 [00:00<00:00, 3608.29it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 7012.71it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 11403.76it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 9156.54it/s]
+Computing transition probabilities:   0%|          | 0/71 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 71/71 [00:00<00:00, 8294.45it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 16540.14it/s]
+Computing transition probabilities:   0%|          | 0/13 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 13/13 [00:00<00:00, 12604.24it/s]
+Computing transition probabilities:   0%|          | 0/31 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 31/31 [00:00<00:00, 2098.78it/s]
+Computing transition probabilities:   0%|          | 0/25 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 25/25 [00:00<00:00, 8016.64it/s]
+Computing transition probabilities:   0%|          | 0/75 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 75/75 [00:00<00:00, 4034.38it/s]
+Computing transition probabilities:   0%|          | 0/81 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 81/81 [00:00<00:00, 7047.20it/s]
+Computing transition probabilities:   0%|          | 0/82 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 82/82 [00:00<00:00, 4827.40it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 12637.25it/s]
+Computing transition probabilities:   0%|          | 0/80 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 80/80 [00:00<00:00, 8793.78it/s]
+Computing transition probabilities:   0%|          | 0/53 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 53/53 [00:00<00:00, 9075.99it/s]
+Computing transition probabilities:   0%|          | 0/47 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 47/47 [00:00<00:00, 4811.16it/s]
+Computing transition probabilities:   0%|          | 0/90 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 90/90 [00:00<00:00, 6548.82it/s]
+Computing transition probabilities:   0%|          | 0/95 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 95/95 [00:00<00:00, 5625.25it/s]
+Computing transition probabilities:   0%|          | 0/29 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 29/29 [00:00<00:00, 11187.90it/s]
+Computing transition probabilities:   0%|          | 0/60 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 60/60 [00:00<00:00, 15256.64it/s]
+Computing transition probabilities:   0%|          | 0/21 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 21/21 [00:00<00:00, 9709.04it/s]
+Computing transition probabilities:   0%|          | 0/52 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 52/52 [00:00<00:00, 1231.04it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 12216.42it/s]
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 6479.91it/s]
+Computing transition probabilities:   0%|          | 0/60 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 60/60 [00:00<00:00, 6745.42it/s]
+Computing transition probabilities:   0%|          | 0/17 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 17/17 [00:00<00:00, 23751.89it/s]
+Computing transition probabilities:   0%|          | 0/22 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 22/22 [00:00<00:00, 13294.15it/s]
+Computing transition probabilities:   0%|          | 0/33 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 33/33 [00:00<00:00, 9464.07it/s]
+Computing transition probabilities:   0%|          | 0/34 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 34/34 [00:00<00:00, 12755.49it/s]
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 2402.85it/s]
+Computing transition probabilities:   0%|          | 0/52 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 52/52 [00:00<00:00, 2824.70it/s]
+Computing transition probabilities:   0%|          | 0/64 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 64/64 [00:00<00:00, 4946.02it/s]
+Computing transition probabilities:   0%|          | 0/48 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 48/48 [00:00<00:00, 10452.55it/s]
+Computing transition probabilities:   0%|          | 0/102 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 102/102 [00:00<00:00, 5102.07it/s]
+Computing transition probabilities:   0%|          | 0/26 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 26/26 [00:00<00:00, 8896.39it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 5865.96it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 12774.53it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 14443.20it/s]
+Computing transition probabilities:   0%|          | 0/22 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 22/22 [00:00<00:00, 6171.39it/s]
+Computing transition probabilities:   0%|          | 0/39 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 39/39 [00:00<00:00, 10067.57it/s]
+Computing transition probabilities:   0%|          | 0/29 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 29/29 [00:00<00:00, 7630.31it/s]
+Computing transition probabilities:   0%|          | 0/23 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 23/23 [00:00<00:00, 9041.99it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 4735.40it/s]
+Computing transition probabilities:   0%|          | 0/27 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 27/27 [00:00<00:00, 11428.62it/s]
+Computing transition probabilities:   0%|          | 0/29 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 29/29 [00:00<00:00, 7026.85it/s]
+Computing transition probabilities:   0%|          | 0/54 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 54/54 [00:00<00:00, 9411.69it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 11376.95it/s]
+Computing transition probabilities:   0%|          | 0/21 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 21/21 [00:00<00:00, 5822.34it/s]
+Computing transition probabilities:   0%|          | 0/22 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 22/22 [00:00<00:00, 13863.38it/s]
+Computing transition probabilities:   0%|          | 0/32 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 32/32 [00:00<00:00, 4853.11it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 2436.95it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 8264.64it/s]
+Computing transition probabilities:   0%|          | 0/26 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 26/26 [00:00<00:00, 2469.36it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 10512.04it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 6650.76it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 11530.73it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 10283.31it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 18608.27it/s]
+Computing transition probabilities:   0%|          | 0/44 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 44/44 [00:00<00:00, 11272.94it/s]
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+========================k_idx:1========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 3005.23it/s]
+Computing transition probabilities:   0%|          | 0/81 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 81/81 [00:00<00:00, 2060.93it/s]
+Computing transition probabilities:   0%|          | 0/92 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 92/92 [00:00<00:00, 3507.07it/s]
+Computing transition probabilities:   0%|          | 0/44 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 44/44 [00:00<00:00, 5832.97it/s]
+Computing transition probabilities:   0%|          | 0/82 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 82/82 [00:00<00:00, 3712.78it/s]
+Computing transition probabilities:   0%|          | 0/70 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 70/70 [00:00<00:00, 971.06it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 12721.58it/s]
+Computing transition probabilities:   0%|          | 0/59 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 59/59 [00:00<00:00, 953.09it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 11557.74it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 11154.34it/s]
+Computing transition probabilities:   0%|          | 0/80 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 80/80 [00:00<00:00, 3953.39it/s]
+Computing transition probabilities:   0%|          | 0/84 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 84/84 [00:00<00:00, 7558.93it/s]
+Computing transition probabilities:   0%|          | 0/47 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 47/47 [00:00<00:00, 5643.64it/s]
+Computing transition probabilities:   0%|          | 0/95 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 95/95 [00:00<00:00, 8255.48it/s]
+Computing transition probabilities:   0%|          | 0/57 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 57/57 [00:00<00:00, 5569.35it/s]
+Computing transition probabilities:   0%|          | 0/60 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 60/60 [00:00<00:00, 8762.78it/s]
+Computing transition probabilities:   0%|          | 0/52 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 52/52 [00:00<00:00, 4993.79it/s]
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 3166.40it/s]
+Computing transition probabilities:   0%|          | 0/106 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 106/106 [00:00<00:00, 1594.94it/s]
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 976.86it/s]
+Computing transition probabilities:   0%|          | 0/48 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 48/48 [00:00<00:00, 5106.05it/s]
+Computing transition probabilities:   0%|          | 0/102 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 102/102 [00:00<00:00, 6761.91it/s]
+Computing transition probabilities:   0%|          | 0/57 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 57/57 [00:00<00:00, 9153.31it/s]
+Computing transition probabilities:   0%|          | 0/34 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 34/34 [00:00<00:00, 6215.14it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 2982.63it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 11136.22it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 12052.60it/s]
+Computing transition probabilities:   0%|          | 0/19 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 19/19 [00:00<00:00, 18830.76it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 8226.14it/s]
+Computing transition probabilities:   0%|          | 0/23 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 23/23 [00:00<00:00, 8428.18it/s]
+Computing transition probabilities:   0%|          | 0/39 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 39/39 [00:00<00:00, 4473.37it/s]
+Computing transition probabilities:   0%|          | 0/27 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 27/27 [00:00<00:00, 9662.65it/s]
+Computing transition probabilities:   0%|          | 0/18 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 18/18 [00:00<00:00, 12089.27it/s]
+Computing transition probabilities:   0%|          | 0/29 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 29/29 [00:00<00:00, 13351.79it/s]
+Computing transition probabilities:   0%|          | 0/54 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 54/54 [00:00<00:00, 9859.07it/s]
+Computing transition probabilities:   0%|          | 0/14 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 14/14 [00:00<00:00, 3709.19it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 12401.03it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 11618.57it/s]
+Computing transition probabilities:   0%|          | 0/6 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 6/6 [00:00<00:00, 11960.94it/s]
+Computing transition probabilities:   0%|          | 0/64 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 64/64 [00:00<00:00, 5177.15it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 12360.42it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 11679.23it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 11538.66it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 10979.85it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 11645.99it/s]
+Computing transition probabilities:   0%|          | 0/25 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 25/25 [00:00<00:00, 8439.24it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 8382.32it/s]
+Computing transition probabilities:   0%|          | 0/75 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 75/75 [00:00<00:00, 10417.35it/s]
+Computing transition probabilities:   0%|          | 0/51 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 51/51 [00:00<00:00, 2190.10it/s]
+Computing transition probabilities:   0%|          | 0/73 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 73/73 [00:00<00:00, 4820.51it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 10543.42it/s]
+Computing transition probabilities:   0%|          | 0/76 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 76/76 [00:00<00:00, 9330.22it/s]
+Computing transition probabilities:   0%|          | 0/143 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 143/143 [00:00<00:00, 7976.83it/s]
+Computing transition probabilities:   0%|          | 0/30 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 30/30 [00:00<00:00, 4353.05it/s]
+Computing transition probabilities:   0%|          | 0/180 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 180/180 [00:00<00:00, 3841.43it/s]
+Computing transition probabilities:   0%|          | 0/46 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 46/46 [00:00<00:00, 2231.55it/s]
+Computing transition probabilities:   0%|          | 0/129 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 129/129 [00:00<00:00, 1910.84it/s]
+Computing transition probabilities:   0%|          | 0/130 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 130/130 [00:00<00:00, 3537.66it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 12052.60it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 13458.97it/s]
+Computing transition probabilities:   0%|          | 0/135 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 135/135 [00:00<00:00, 7616.77it/s]
+Computing transition probabilities:   0%|          | 0/74 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 74/74 [00:00<00:00, 8180.34it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 1393.20it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 7337.83it/s]
+Computing transition probabilities:   0%|          | 0/69 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 69/69 [00:00<00:00, 12034.55it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 7213.59it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 13673.36it/s]
+Computing transition probabilities:   0%|          | 0/74 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 74/74 [00:00<00:00, 1925.04it/s]
+Computing transition probabilities:   0%|          | 0/100 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 100/100 [00:00<00:00, 5486.98it/s]
+Computing transition probabilities:   0%|          | 0/152 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 152/152 [00:00<00:00, 5333.63it/s]
+Computing transition probabilities:   0%|          | 0/95 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 95/95 [00:00<00:00, 6450.69it/s]
+Computing transition probabilities:   0%|          | 0/107 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 107/107 [00:00<00:00, 3456.91it/s]
+Computing transition probabilities:   0%|          | 0/19 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 19/19 [00:00<00:00, 2148.78it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 19204.69it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 11169.92it/s]
+Computing transition probabilities:   0%|          | 0/2 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 2/2 [00:00<00:00, 5398.07it/s]
+Computing transition probabilities:   0%|          | 0/2 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 2/2 [00:00<00:00, 14098.50it/s]
+Computing transition probabilities:   0%|          | 0/35 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 35/35 [00:00<00:00, 15514.76it/s]
+Computing transition probabilities:   0%|          | 0/26 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 26/26 [00:00<00:00, 10779.08it/s]
+Computing transition probabilities:   0%|          | 0/13 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 13/13 [00:00<00:00, 8362.88it/s]
+Computing transition probabilities:   0%|          | 0/28 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 28/28 [00:00<00:00, 15797.76it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 10024.63it/s]
+Computing transition probabilities:   0%|          | 0/6 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 6/6 [00:00<00:00, 11667.05it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 14341.73it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 8602.23it/s]
+Computing transition probabilities:   0%|          | 0/38 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 38/38 [00:00<00:00, 8483.71it/s]
+Computing transition probabilities:   0%|          | 0/43 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 43/43 [00:00<00:00, 10403.50it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 6592.74it/s]
+Computing transition probabilities:   0%|          | 0/21 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 21/21 [00:00<00:00, 7459.38it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 9437.77it/s]
+Computing transition probabilities:   0%|          | 0/36 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 36/36 [00:00<00:00, 3999.23it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 10916.98it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 14138.10it/s]
+Computing transition probabilities:   0%|          | 0/40 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 40/40 [00:00<00:00, 3175.52it/s]
+Computing transition probabilities:   0%|          | 0/31 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 31/31 [00:00<00:00, 4305.98it/s]
+Computing transition probabilities:   0%|          | 0/6 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 6/6 [00:00<00:00, 16567.36it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 11848.32it/s]
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+========================k_idx:2========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Computing transition probabilities:   0%|          | 0/81 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 81/81 [00:00<00:00, 9752.80it/s]
+Computing transition probabilities:   0%|          | 0/73 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 73/73 [00:00<00:00, 7095.65it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 9465.28it/s]
+Computing transition probabilities:   0%|          | 0/76 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 76/76 [00:00<00:00, 4094.05it/s]
+Computing transition probabilities:   0%|          | 0/82 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 82/82 [00:00<00:00, 5976.87it/s]
+Computing transition probabilities:   0%|          | 0/143 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 143/143 [00:00<00:00, 9088.90it/s]
+Computing transition probabilities:   0%|          | 0/30 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 30/30 [00:00<00:00, 7786.94it/s]
+Computing transition probabilities:   0%|          | 0/129 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 129/129 [00:00<00:00, 7249.29it/s]
+Computing transition probabilities:   0%|          | 0/80 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 80/80 [00:00<00:00, 4133.13it/s]
+Computing transition probabilities:   0%|          | 0/53 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 53/53 [00:00<00:00, 5711.52it/s]
+Computing transition probabilities:   0%|          | 0/130 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 130/130 [00:00<00:00, 2934.12it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 10241.21it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 6073.10it/s]
+Computing transition probabilities:   0%|          | 0/74 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 74/74 [00:00<00:00, 6323.67it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 8064.63it/s]
+Computing transition probabilities:   0%|          | 0/52 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 52/52 [00:00<00:00, 1497.42it/s]
+Computing transition probabilities:   0%|          | 0/60 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 60/60 [00:00<00:00, 6053.11it/s]
+Computing transition probabilities:   0%|          | 0/22 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 22/22 [00:00<00:00, 9383.23it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 10018.24it/s]
+Computing transition probabilities:   0%|          | 0/52 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 52/52 [00:00<00:00, 4541.94it/s]
+Computing transition probabilities:   0%|          | 0/48 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 48/48 [00:00<00:00, 6170.93it/s]
+Computing transition probabilities:   0%|          | 0/152 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 152/152 [00:00<00:00, 6733.07it/s]
+Computing transition probabilities:   0%|          | 0/95 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 95/95 [00:00<00:00, 7255.39it/s]
+Computing transition probabilities:   0%|          | 0/107 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 107/107 [00:00<00:00, 3409.90it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 8509.82it/s]
+Computing transition probabilities:   0%|          | 0/19 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 19/19 [00:00<00:00, 6994.80it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 19310.79it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 12985.46it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 15673.78it/s]
+Computing transition probabilities:   0%|          | 0/2 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 2/2 [00:00<00:00, 12614.45it/s]
+Computing transition probabilities:   0%|          | 0/26 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 26/26 [00:00<00:00, 11221.64it/s]
+Computing transition probabilities:   0%|          | 0/13 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 13/13 [00:00<00:00, 8627.52it/s]
+Computing transition probabilities:   0%|          | 0/28 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 28/28 [00:00<00:00, 8816.19it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 9999.53it/s]
+Computing transition probabilities:   0%|          | 0/27 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 27/27 [00:00<00:00, 11074.34it/s]
+Computing transition probabilities:   0%|          | 0/29 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 29/29 [00:00<00:00, 10235.17it/s]
+Computing transition probabilities:   0%|          | 0/54 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 54/54 [00:00<00:00, 8844.25it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 14152.56it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 13691.96it/s]
+Computing transition probabilities:   0%|          | 0/22 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 22/22 [00:00<00:00, 9392.78it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 7919.76it/s]
+Computing transition probabilities:   0%|          | 0/36 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 36/36 [00:00<00:00, 7462.81it/s]
+Computing transition probabilities:   0%|          | 0/32 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 32/32 [00:00<00:00, 7260.51it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 10932.16it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 14298.76it/s]
+Computing transition probabilities:   0%|          | 0/31 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 31/31 [00:00<00:00, 9954.33it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 6729.73it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 15887.52it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 12321.69it/s]
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 1462.01it/s]
+Computing transition probabilities:   0%|          | 0/130 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 130/130 [00:00<00:00, 3553.22it/s]
+Computing transition probabilities:   0%|          | 0/92 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 92/92 [00:00<00:00, 7022.95it/s]
+Computing transition probabilities:   0%|          | 0/44 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 44/44 [00:00<00:00, 2473.39it/s]
+Computing transition probabilities:   0%|          | 0/70 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 70/70 [00:00<00:00, 1401.16it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 5455.65it/s]
+Computing transition probabilities:   0%|          | 0/119 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 119/119 [00:00<00:00, 16325.59it/s]
+Computing transition probabilities:   0%|          | 0/56 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 56/56 [00:00<00:00, 2087.53it/s]
+Computing transition probabilities:   0%|          | 0/21 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 21/21 [00:00<00:00, 12262.34it/s]
+Computing transition probabilities:   0%|          | 0/59 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 59/59 [00:00<00:00, 1318.35it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 11620.93it/s]
+Computing transition probabilities:   0%|          | 0/13 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 13/13 [00:00<00:00, 9524.18it/s]
+Computing transition probabilities:   0%|          | 0/84 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 84/84 [00:00<00:00, 2704.11it/s]
+Computing transition probabilities:   0%|          | 0/71 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 71/71 [00:00<00:00, 8326.45it/s]
+Computing transition probabilities:   0%|          | 0/56 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 56/56 [00:00<00:00, 5078.62it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 11391.37it/s]
+Computing transition probabilities:   0%|          | 0/57 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 57/57 [00:00<00:00, 9419.83it/s]
+Computing transition probabilities:   0%|          | 0/72 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 72/72 [00:00<00:00, 4445.08it/s]
+Computing transition probabilities:   0%|          | 0/54 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 54/54 [00:00<00:00, 2760.52it/s]
+Computing transition probabilities:   0%|          | 0/106 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 106/106 [00:00<00:00, 6964.77it/s]
+Computing transition probabilities:   0%|          | 0/201 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 201/201 [00:00<00:00, 3964.20it/s]
+Computing transition probabilities:   0%|          | 0/14 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 14/14 [00:00<00:00, 10536.56it/s]
+Computing transition probabilities:   0%|          | 0/57 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 57/57 [00:00<00:00, 12429.18it/s]
+Computing transition probabilities:   0%|          | 0/34 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 34/34 [00:00<00:00, 3108.25it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 11589.39it/s]
+Computing transition probabilities:   0%|          | 0/19 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 19/19 [00:00<00:00, 10476.11it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 7845.32it/s]
+Computing transition probabilities:   0%|          | 0/32 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 32/32 [00:00<00:00, 6424.05it/s]
+Computing transition probabilities:   0%|          | 0/23 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 23/23 [00:00<00:00, 7233.19it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 10951.19it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 13495.19it/s]
+Computing transition probabilities:   0%|          | 0/18 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 18/18 [00:00<00:00, 16777.22it/s]
+Computing transition probabilities:   0%|          | 0/18 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 18/18 [00:00<00:00, 7806.58it/s]
+Computing transition probabilities:   0%|          | 0/14 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 14/14 [00:00<00:00, 12849.07it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 8947.85it/s]
+Computing transition probabilities:   0%|          | 0/6 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 6/6 [00:00<00:00, 12589.21it/s]
+Computing transition probabilities:   0%|          | 0/64 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 64/64 [00:00<00:00, 7055.55it/s]
+Computing transition probabilities:   0%|          | 0/27 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 27/27 [00:00<00:00, 4225.45it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 15054.93it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 10924.56it/s]
+Computing transition probabilities:   0%|          | 0/24 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 24/24 [00:00<00:00, 1814.28it/s]
+Computing transition probabilities:   0%|          | 0/71 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 71/71 [00:00<00:00, 4605.85it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 11123.02it/s]
+Computing transition probabilities:   0%|          | 0/13 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 13/13 [00:00<00:00, 13473.18it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 12216.42it/s]
+Computing transition probabilities:   0%|          | 0/25 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 25/25 [00:00<00:00, 7444.63it/s]
+Computing transition probabilities:   0%|          | 0/75 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 75/75 [00:00<00:00, 6755.27it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 13357.66it/s]
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+Three-fold cross-validation F1 score: 0.7764309764309765
+Three-fold cross-validation precision: 0.8523809523809525
+Three-fold cross-validation recall: 0.7133333333333334
+Three-fold cross-validation micro F1 score: 0.7946428571428571
+========================training times:1========================
+========================k_idx:0========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 1570.90it/s]
+Computing transition probabilities:   0%|          | 0/51 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 51/51 [00:00<00:00, 2189.61it/s]
+Computing transition probabilities:   0%|          | 0/73 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 73/73 [00:00<00:00, 4775.32it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 10692.94it/s]
+Computing transition probabilities:   0%|          | 0/92 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 92/92 [00:00<00:00, 7171.62it/s]
+Computing transition probabilities:   0%|          | 0/44 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 44/44 [00:00<00:00, 5271.94it/s]
+Computing transition probabilities:   0%|          | 0/76 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 76/76 [00:00<00:00, 3580.49it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 11709.39it/s]
+Computing transition probabilities:   0%|          | 0/180 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 180/180 [00:00<00:00, 3183.40it/s]
+Computing transition probabilities:   0%|          | 0/119 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 119/119 [00:00<00:00, 5170.91it/s]
+Computing transition probabilities:   0%|          | 0/46 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 46/46 [00:00<00:00, 8958.03it/s]
+Computing transition probabilities:   0%|          | 0/21 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 21/21 [00:00<00:00, 14901.10it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 8557.25it/s]
+Computing transition probabilities:   0%|          | 0/71 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 71/71 [00:00<00:00, 5954.01it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 9978.25it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 11663.80it/s]
+Computing transition probabilities:   0%|          | 0/135 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 135/135 [00:00<00:00, 5126.54it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 3855.73it/s]
+Computing transition probabilities:   0%|          | 0/106 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 106/106 [00:00<00:00, 8853.68it/s]
+Computing transition probabilities:   0%|          | 0/69 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 69/69 [00:00<00:00, 8075.20it/s]
+Computing transition probabilities:   0%|          | 0/74 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 74/74 [00:00<00:00, 5370.52it/s]
+Computing transition probabilities:   0%|          | 0/14 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 14/14 [00:00<00:00, 12446.01it/s]
+Computing transition probabilities:   0%|          | 0/57 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 57/57 [00:00<00:00, 3823.19it/s]
+Computing transition probabilities:   0%|          | 0/107 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 107/107 [00:00<00:00, 1682.92it/s]
+Computing transition probabilities:   0%|          | 0/19 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 19/19 [00:00<00:00, 2230.95it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 14863.84it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 14403.52it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 13454.06it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 6912.74it/s]
+Computing transition probabilities:   0%|          | 0/2 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 2/2 [00:00<00:00, 1636.48it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 7121.82it/s]
+Computing transition probabilities:   0%|          | 0/28 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 28/28 [00:00<00:00, 12014.37it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 11149.13it/s]
+Computing transition probabilities:   0%|          | 0/18 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 18/18 [00:00<00:00, 14571.99it/s]
+Computing transition probabilities:   0%|          | 0/6 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 6/6 [00:00<00:00, 13942.28it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 14707.47it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 14939.64it/s]
+Computing transition probabilities:   0%|          | 0/38 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 38/38 [00:00<00:00, 9217.72it/s]
+Computing transition probabilities:   0%|          | 0/64 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 64/64 [00:00<00:00, 6265.12it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 6173.09it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 13239.60it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 11331.87it/s]
+Computing transition probabilities:   0%|          | 0/71 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 71/71 [00:00<00:00, 7062.63it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 14359.96it/s]
+Computing transition probabilities:   0%|          | 0/13 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 13/13 [00:00<00:00, 5728.12it/s]
+Computing transition probabilities:   0%|          | 0/31 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 31/31 [00:00<00:00, 2667.80it/s]
+Computing transition probabilities:   0%|          | 0/25 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 25/25 [00:00<00:00, 6048.55it/s]
+Computing transition probabilities:   0%|          | 0/75 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 75/75 [00:00<00:00, 4487.36it/s]
+Computing transition probabilities:   0%|          | 0/81 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 81/81 [00:00<00:00, 6174.71it/s]
+Computing transition probabilities:   0%|          | 0/82 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 82/82 [00:00<00:00, 4448.18it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 12524.05it/s]
+Computing transition probabilities:   0%|          | 0/80 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 80/80 [00:00<00:00, 4845.55it/s]
+Computing transition probabilities:   0%|          | 0/53 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 53/53 [00:00<00:00, 5482.07it/s]
+Computing transition probabilities:   0%|          | 0/47 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 47/47 [00:00<00:00, 11605.57it/s]
+Computing transition probabilities:   0%|          | 0/90 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 90/90 [00:00<00:00, 3019.58it/s]
+Computing transition probabilities:   0%|          | 0/95 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 95/95 [00:00<00:00, 2716.44it/s]
+Computing transition probabilities:   0%|          | 0/29 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 29/29 [00:00<00:00, 10840.89it/s]
+Computing transition probabilities:   0%|          | 0/60 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 60/60 [00:00<00:00, 11877.39it/s]
+Computing transition probabilities:   0%|          | 0/21 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 21/21 [00:00<00:00, 12888.55it/s]
+Computing transition probabilities:   0%|          | 0/52 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 52/52 [00:00<00:00, 8426.20it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 12087.33it/s]
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 4815.33it/s]
+Computing transition probabilities:   0%|          | 0/60 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 60/60 [00:00<00:00, 6280.62it/s]
+Computing transition probabilities:   0%|          | 0/17 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 17/17 [00:00<00:00, 19637.34it/s]
+Computing transition probabilities:   0%|          | 0/22 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 22/22 [00:00<00:00, 10526.43it/s]
+Computing transition probabilities:   0%|          | 0/33 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 33/33 [00:00<00:00, 10670.06it/s]
+Computing transition probabilities:   0%|          | 0/34 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 34/34 [00:00<00:00, 7330.81it/s]
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 3585.89it/s]
+Computing transition probabilities:   0%|          | 0/52 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 52/52 [00:00<00:00, 5118.37it/s]
+Computing transition probabilities:   0%|          | 0/64 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 64/64 [00:00<00:00, 2850.81it/s]
+Computing transition probabilities:   0%|          | 0/48 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 48/48 [00:00<00:00, 2190.52it/s]
+Computing transition probabilities:   0%|          | 0/102 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 102/102 [00:00<00:00, 2364.23it/s]
+Computing transition probabilities:   0%|          | 0/26 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 26/26 [00:00<00:00, 2521.96it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 10524.26it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 13721.82it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 13715.84it/s]
+Computing transition probabilities:   0%|          | 0/22 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 22/22 [00:00<00:00, 8513.21it/s]
+Computing transition probabilities:   0%|          | 0/39 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 39/39 [00:00<00:00, 4557.88it/s]
+Computing transition probabilities:   0%|          | 0/29 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 29/29 [00:00<00:00, 2725.89it/s]
+Computing transition probabilities:   0%|          | 0/23 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 23/23 [00:00<00:00, 8128.50it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 7651.05it/s]
+Computing transition probabilities:   0%|          | 0/27 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 27/27 [00:00<00:00, 9545.36it/s]
+Computing transition probabilities:   0%|          | 0/29 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 29/29 [00:00<00:00, 13563.20it/s]
+Computing transition probabilities:   0%|          | 0/54 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 54/54 [00:00<00:00, 5414.98it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 10150.24it/s]
+Computing transition probabilities:   0%|          | 0/21 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 21/21 [00:00<00:00, 8397.41it/s]
+Computing transition probabilities:   0%|          | 0/22 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 22/22 [00:00<00:00, 11146.98it/s]
+Computing transition probabilities:   0%|          | 0/32 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 32/32 [00:00<00:00, 13490.57it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 11928.34it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 11035.22it/s]
+Computing transition probabilities:   0%|          | 0/26 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 26/26 [00:00<00:00, 9146.35it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 14043.43it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 8386.09it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 17706.82it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 13241.69it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 15673.78it/s]
+Computing transition probabilities:   0%|          | 0/44 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 44/44 [00:00<00:00, 9045.65it/s]
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+========================k_idx:1========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 2973.16it/s]
+Computing transition probabilities:   0%|          | 0/81 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 81/81 [00:00<00:00, 5262.04it/s]
+Computing transition probabilities:   0%|          | 0/92 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 92/92 [00:00<00:00, 1644.91it/s]
+Computing transition probabilities:   0%|          | 0/44 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 44/44 [00:00<00:00, 8337.45it/s]
+Computing transition probabilities:   0%|          | 0/82 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 82/82 [00:00<00:00, 7297.07it/s]
+Computing transition probabilities:   0%|          | 0/70 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 70/70 [00:00<00:00, 7278.17it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 11886.93it/s]
+Computing transition probabilities:   0%|          | 0/59 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 59/59 [00:00<00:00, 4519.23it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 14742.72it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 11680.92it/s]
+Computing transition probabilities:   0%|          | 0/80 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 80/80 [00:00<00:00, 6731.35it/s]
+Computing transition probabilities:   0%|          | 0/84 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 84/84 [00:00<00:00, 7014.03it/s]
+Computing transition probabilities:   0%|          | 0/47 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 47/47 [00:00<00:00, 9079.83it/s]
+Computing transition probabilities:   0%|          | 0/95 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 95/95 [00:00<00:00, 5415.68it/s]
+Computing transition probabilities:   0%|          | 0/57 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 57/57 [00:00<00:00, 11782.91it/s]
+Computing transition probabilities:   0%|          | 0/60 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 60/60 [00:00<00:00, 3620.41it/s]
+Computing transition probabilities:   0%|          | 0/52 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 52/52 [00:00<00:00, 8759.54it/s]
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 2809.93it/s]
+Computing transition probabilities:   0%|          | 0/106 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 106/106 [00:00<00:00, 3398.98it/s]
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 6209.04it/s]
+Computing transition probabilities:   0%|          | 0/48 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 48/48 [00:00<00:00, 8346.53it/s]
+Computing transition probabilities:   0%|          | 0/102 [00:00<?, ?it/s]Computing transition probabilities:  99%|#########9| 101/102 [00:00<00:00, 1008.98it/s]Computing transition probabilities: 100%|##########| 102/102 [00:00<00:00, 978.43it/s] 
+Computing transition probabilities:   0%|          | 0/57 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 57/57 [00:00<00:00, 4887.87it/s]
+Computing transition probabilities:   0%|          | 0/34 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 34/34 [00:00<00:00, 5134.53it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 9344.99it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 13159.54it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 12945.38it/s]
+Computing transition probabilities:   0%|          | 0/19 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 19/19 [00:00<00:00, 12968.56it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 7514.99it/s]
+Computing transition probabilities:   0%|          | 0/23 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 23/23 [00:00<00:00, 5269.23it/s]
+Computing transition probabilities:   0%|          | 0/39 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 39/39 [00:00<00:00, 2230.25it/s]
+Computing transition probabilities:   0%|          | 0/27 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 27/27 [00:00<00:00, 11629.31it/s]
+Computing transition probabilities:   0%|          | 0/18 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 18/18 [00:00<00:00, 17508.69it/s]
+Computing transition probabilities:   0%|          | 0/29 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 29/29 [00:00<00:00, 10610.15it/s]
+Computing transition probabilities:   0%|          | 0/54 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 54/54 [00:00<00:00, 4859.62it/s]
+Computing transition probabilities:   0%|          | 0/14 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 14/14 [00:00<00:00, 12074.90it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 10894.30it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 9264.06it/s]
+Computing transition probabilities:   0%|          | 0/6 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 6/6 [00:00<00:00, 10690.66it/s]
+Computing transition probabilities:   0%|          | 0/64 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 64/64 [00:00<00:00, 3644.94it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 10040.63it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 9918.54it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 11313.02it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 11960.94it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 8495.65it/s]
+Computing transition probabilities:   0%|          | 0/25 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 25/25 [00:00<00:00, 8359.85it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 17800.76it/s]
+Computing transition probabilities:   0%|          | 0/75 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 75/75 [00:00<00:00, 7475.77it/s]
+Computing transition probabilities:   0%|          | 0/51 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 51/51 [00:00<00:00, 2545.63it/s]
+Computing transition probabilities:   0%|          | 0/73 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 73/73 [00:00<00:00, 6341.58it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 3082.77it/s]
+Computing transition probabilities:   0%|          | 0/76 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 76/76 [00:00<00:00, 6667.51it/s]
+Computing transition probabilities:   0%|          | 0/143 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 143/143 [00:00<00:00, 2943.60it/s]
+Computing transition probabilities:   0%|          | 0/30 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 30/30 [00:00<00:00, 9963.51it/s]
+Computing transition probabilities:   0%|          | 0/180 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 180/180 [00:00<00:00, 5511.29it/s]
+Computing transition probabilities:   0%|          | 0/46 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 46/46 [00:00<00:00, 12655.82it/s]
+Computing transition probabilities:   0%|          | 0/129 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 129/129 [00:00<00:00, 4390.48it/s]
+Computing transition probabilities:   0%|          | 0/130 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 130/130 [00:00<00:00, 2114.17it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 1778.09it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 11187.52it/s]
+Computing transition probabilities:   0%|          | 0/135 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 135/135 [00:00<00:00, 2636.58it/s]
+Computing transition probabilities:   0%|          | 0/74 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 74/74 [00:00<00:00, 3730.47it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 6407.40it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 2816.10it/s]
+Computing transition probabilities:   0%|          | 0/69 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 69/69 [00:00<00:00, 8329.94it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 10825.56it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 13891.30it/s]
+Computing transition probabilities:   0%|          | 0/74 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 74/74 [00:00<00:00, 4811.03it/s]
+Computing transition probabilities:   0%|          | 0/100 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 100/100 [00:00<00:00, 8458.13it/s]
+Computing transition probabilities:   0%|          | 0/152 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 152/152 [00:00<00:00, 5066.51it/s]
+Computing transition probabilities:   0%|          | 0/95 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 95/95 [00:00<00:00, 1189.87it/s]
+Computing transition probabilities:   0%|          | 0/107 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 107/107 [00:00<00:00, 2445.55it/s]
+Computing transition probabilities:   0%|          | 0/19 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 19/19 [00:00<00:00, 4932.34it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 20950.57it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 15406.08it/s]
+Computing transition probabilities:   0%|          | 0/2 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 2/2 [00:00<00:00, 9709.04it/s]
+Computing transition probabilities:   0%|          | 0/2 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 2/2 [00:00<00:00, 11848.32it/s]
+Computing transition probabilities:   0%|          | 0/35 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 35/35 [00:00<00:00, 15081.22it/s]
+Computing transition probabilities:   0%|          | 0/26 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 26/26 [00:00<00:00, 10794.01it/s]
+Computing transition probabilities:   0%|          | 0/13 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 13/13 [00:00<00:00, 15841.36it/s]
+Computing transition probabilities:   0%|          | 0/28 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 28/28 [00:00<00:00, 14268.07it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 9390.58it/s]
+Computing transition probabilities:   0%|          | 0/6 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 6/6 [00:00<00:00, 8536.58it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 2249.94it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 12243.16it/s]
+Computing transition probabilities:   0%|          | 0/38 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 38/38 [00:00<00:00, 5777.91it/s]
+Computing transition probabilities:   0%|          | 0/43 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 43/43 [00:00<00:00, 6445.40it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 6061.13it/s]
+Computing transition probabilities:   0%|          | 0/21 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 21/21 [00:00<00:00, 8153.33it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 14310.96it/s]
+Computing transition probabilities:   0%|          | 0/36 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 36/36 [00:00<00:00, 12372.58it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 5379.61it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 18378.16it/s]
+Computing transition probabilities:   0%|          | 0/40 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 40/40 [00:00<00:00, 860.06it/s]
+Computing transition probabilities:   0%|          | 0/31 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 31/31 [00:00<00:00, 4684.68it/s]
+Computing transition probabilities:   0%|          | 0/6 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 6/6 [00:00<00:00, 21345.06it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 12425.52it/s]
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+========================k_idx:2========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Computing transition probabilities:   0%|          | 0/81 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 81/81 [00:00<00:00, 11115.28it/s]
+Computing transition probabilities:   0%|          | 0/73 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 73/73 [00:00<00:00, 1665.96it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 3495.80it/s]
+Computing transition probabilities:   0%|          | 0/76 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 76/76 [00:00<00:00, 5142.90it/s]
+Computing transition probabilities:   0%|          | 0/82 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 82/82 [00:00<00:00, 11462.90it/s]
+Computing transition probabilities:   0%|          | 0/143 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 143/143 [00:00<00:00, 7855.32it/s]
+Computing transition probabilities:   0%|          | 0/30 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 30/30 [00:00<00:00, 4990.05it/s]
+Computing transition probabilities:   0%|          | 0/129 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 129/129 [00:00<00:00, 8108.64it/s]
+Computing transition probabilities:   0%|          | 0/80 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 80/80 [00:00<00:00, 6626.73it/s]
+Computing transition probabilities:   0%|          | 0/53 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 53/53 [00:00<00:00, 11133.83it/s]
+Computing transition probabilities:   0%|          | 0/130 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 130/130 [00:00<00:00, 2917.31it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 7334.03it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 13698.74it/s]
+Computing transition probabilities:   0%|          | 0/74 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 74/74 [00:00<00:00, 8928.93it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 6911.85it/s]
+Computing transition probabilities:   0%|          | 0/52 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 52/52 [00:00<00:00, 1548.48it/s]
+Computing transition probabilities:   0%|          | 0/60 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 60/60 [00:00<00:00, 12991.49it/s]
+Computing transition probabilities:   0%|          | 0/22 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 22/22 [00:00<00:00, 9995.09it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 8197.34it/s]
+Computing transition probabilities:   0%|          | 0/52 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 52/52 [00:00<00:00, 5433.58it/s]
+Computing transition probabilities:   0%|          | 0/48 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 48/48 [00:00<00:00, 14256.24it/s]
+Computing transition probabilities:   0%|          | 0/152 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 152/152 [00:00<00:00, 4512.21it/s]
+Computing transition probabilities:   0%|          | 0/95 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 95/95 [00:00<00:00, 1344.90it/s]
+Computing transition probabilities:   0%|          | 0/107 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 107/107 [00:00<00:00, 6214.30it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 6521.79it/s]
+Computing transition probabilities:   0%|          | 0/19 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 19/19 [00:00<00:00, 5666.77it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 15465.72it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 13079.95it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 17232.14it/s]
+Computing transition probabilities:   0%|          | 0/2 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 2/2 [00:00<00:00, 9857.35it/s]
+Computing transition probabilities:   0%|          | 0/26 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 26/26 [00:00<00:00, 3163.95it/s]
+Computing transition probabilities:   0%|          | 0/13 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 13/13 [00:00<00:00, 11212.41it/s]
+Computing transition probabilities:   0%|          | 0/28 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 28/28 [00:00<00:00, 16052.56it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 10902.79it/s]
+Computing transition probabilities:   0%|          | 0/27 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 27/27 [00:00<00:00, 12722.86it/s]
+Computing transition probabilities:   0%|          | 0/29 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 29/29 [00:00<00:00, 9889.81it/s]
+Computing transition probabilities:   0%|          | 0/54 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 54/54 [00:00<00:00, 7348.64it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 11799.83it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 11845.53it/s]
+Computing transition probabilities:   0%|          | 0/22 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 22/22 [00:00<00:00, 8574.12it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 8389.45it/s]
+Computing transition probabilities:   0%|          | 0/36 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 36/36 [00:00<00:00, 4870.33it/s]
+Computing transition probabilities:   0%|          | 0/32 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 32/32 [00:00<00:00, 590.01it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 11125.47it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 12748.64it/s]
+Computing transition probabilities:   0%|          | 0/31 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 31/31 [00:00<00:00, 10391.07it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 12729.30it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 12022.37it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 16474.09it/s]
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 3451.66it/s]
+Computing transition probabilities:   0%|          | 0/130 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 130/130 [00:00<00:00, 5387.94it/s]
+Computing transition probabilities:   0%|          | 0/92 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 92/92 [00:00<00:00, 5079.72it/s]
+Computing transition probabilities:   0%|          | 0/44 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 44/44 [00:00<00:00, 7211.50it/s]
+Computing transition probabilities:   0%|          | 0/70 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 70/70 [00:00<00:00, 3044.30it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 11278.04it/s]
+Computing transition probabilities:   0%|          | 0/119 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 119/119 [00:00<00:00, 10218.49it/s]
+Computing transition probabilities:   0%|          | 0/56 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 56/56 [00:00<00:00, 5945.30it/s]
+Computing transition probabilities:   0%|          | 0/21 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 21/21 [00:00<00:00, 15353.04it/s]
+Computing transition probabilities:   0%|          | 0/59 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 59/59 [00:00<00:00, 10126.61it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 5621.47it/s]
+Computing transition probabilities:   0%|          | 0/13 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 13/13 [00:00<00:00, 12420.49it/s]
+Computing transition probabilities:   0%|          | 0/84 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 84/84 [00:00<00:00, 3245.32it/s]
+Computing transition probabilities:   0%|          | 0/71 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 71/71 [00:00<00:00, 5611.06it/s]
+Computing transition probabilities:   0%|          | 0/56 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 56/56 [00:00<00:00, 6238.21it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 13247.96it/s]
+Computing transition probabilities:   0%|          | 0/57 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 57/57 [00:00<00:00, 18658.81it/s]
+Computing transition probabilities:   0%|          | 0/72 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 72/72 [00:00<00:00, 3231.22it/s]
+Computing transition probabilities:   0%|          | 0/54 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 54/54 [00:00<00:00, 6750.29it/s]
+Computing transition probabilities:   0%|          | 0/106 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 106/106 [00:00<00:00, 3944.71it/s]
+Computing transition probabilities:   0%|          | 0/201 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 201/201 [00:00<00:00, 3699.48it/s]
+Computing transition probabilities:   0%|          | 0/14 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 14/14 [00:00<00:00, 11290.19it/s]
+Computing transition probabilities:   0%|          | 0/57 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 57/57 [00:00<00:00, 7770.76it/s]
+Computing transition probabilities:   0%|          | 0/34 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 34/34 [00:00<00:00, 3386.44it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 10328.49it/s]
+Computing transition probabilities:   0%|          | 0/19 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 19/19 [00:00<00:00, 13438.75it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 12052.60it/s]
+Computing transition probabilities:   0%|          | 0/32 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 32/32 [00:00<00:00, 10323.65it/s]
+Computing transition probabilities:   0%|          | 0/23 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 23/23 [00:00<00:00, 4158.33it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 7643.38it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 17490.84it/s]
+Computing transition probabilities:   0%|          | 0/18 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 18/18 [00:00<00:00, 10456.71it/s]
+Computing transition probabilities:   0%|          | 0/18 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 18/18 [00:00<00:00, 12927.65it/s]
+Computing transition probabilities:   0%|          | 0/14 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 14/14 [00:00<00:00, 13624.19it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 12427.57it/s]
+Computing transition probabilities:   0%|          | 0/6 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 6/6 [00:00<00:00, 9830.40it/s]
+Computing transition probabilities:   0%|          | 0/64 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 64/64 [00:00<00:00, 2980.23it/s]
+Computing transition probabilities:   0%|          | 0/27 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 27/27 [00:00<00:00, 8692.52it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 13086.75it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 8955.81it/s]
+Computing transition probabilities:   0%|          | 0/24 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 24/24 [00:00<00:00, 8193.33it/s]
+Computing transition probabilities:   0%|          | 0/71 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 71/71 [00:00<00:00, 4781.25it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 15927.74it/s]
+Computing transition probabilities:   0%|          | 0/13 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 13/13 [00:00<00:00, 15316.28it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 12180.94it/s]
+Computing transition probabilities:   0%|          | 0/25 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 25/25 [00:00<00:00, 10851.45it/s]
+Computing transition probabilities:   0%|          | 0/75 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 75/75 [00:00<00:00, 8288.92it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 17331.83it/s]
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+Three-fold cross-validation F1 score: 0.7827734711455642
+Three-fold cross-validation precision: 0.8681704260651629
+Three-fold cross-validation recall: 0.7133333333333334
+Three-fold cross-validation micro F1 score: 0.8014455782312925
+========================training times:2========================
+========================k_idx:0========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 11774.25it/s]
+Computing transition probabilities:   0%|          | 0/51 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 51/51 [00:00<00:00, 2616.12it/s]
+Computing transition probabilities:   0%|          | 0/73 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 73/73 [00:00<00:00, 9402.25it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 4519.72it/s]
+Computing transition probabilities:   0%|          | 0/92 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 92/92 [00:00<00:00, 4664.06it/s]
+Computing transition probabilities:   0%|          | 0/44 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 44/44 [00:00<00:00, 2246.03it/s]
+Computing transition probabilities:   0%|          | 0/76 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 76/76 [00:00<00:00, 2670.68it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 9509.82it/s]
+Computing transition probabilities:   0%|          | 0/180 [00:00<?, ?it/s]Computing transition probabilities:  58%|#####7    | 104/180 [00:00<00:00, 1038.18it/s]Computing transition probabilities: 100%|##########| 180/180 [00:00<00:00, 1150.04it/s]
+Computing transition probabilities:   0%|          | 0/119 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 119/119 [00:00<00:00, 9950.20it/s]
+Computing transition probabilities:   0%|          | 0/46 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 46/46 [00:00<00:00, 4519.72it/s]
+Computing transition probabilities:   0%|          | 0/21 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 21/21 [00:00<00:00, 5896.79it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 17997.54it/s]
+Computing transition probabilities:   0%|          | 0/71 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 71/71 [00:00<00:00, 3126.07it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 4851.90it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 13617.87it/s]
+Computing transition probabilities:   0%|          | 0/135 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 135/135 [00:00<00:00, 6063.40it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 4150.37it/s]
+Computing transition probabilities:   0%|          | 0/106 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 106/106 [00:00<00:00, 5773.60it/s]
+Computing transition probabilities:   0%|          | 0/69 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 69/69 [00:00<00:00, 1230.55it/s]
+Computing transition probabilities:   0%|          | 0/74 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 74/74 [00:00<00:00, 13714.14it/s]
+Computing transition probabilities:   0%|          | 0/14 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 14/14 [00:00<00:00, 12704.51it/s]
+Computing transition probabilities:   0%|          | 0/57 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 57/57 [00:00<00:00, 8195.93it/s]
+Computing transition probabilities:   0%|          | 0/107 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 107/107 [00:00<00:00, 2382.57it/s]
+Computing transition probabilities:   0%|          | 0/19 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 19/19 [00:00<00:00, 6827.60it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 18633.82it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 21465.22it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 12539.03it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 8612.53it/s]
+Computing transition probabilities:   0%|          | 0/2 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 2/2 [00:00<00:00, 12925.44it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 11026.76it/s]
+Computing transition probabilities:   0%|          | 0/28 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 28/28 [00:00<00:00, 2121.01it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 11149.13it/s]
+Computing transition probabilities:   0%|          | 0/18 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 18/18 [00:00<00:00, 8263.73it/s]
+Computing transition probabilities:   0%|          | 0/6 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 6/6 [00:00<00:00, 19007.42it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 11187.52it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 16039.40it/s]
+Computing transition probabilities:   0%|          | 0/38 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 38/38 [00:00<00:00, 6271.24it/s]
+Computing transition probabilities:   0%|          | 0/64 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 64/64 [00:00<00:00, 1666.79it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 7590.13it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 12550.28it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 10989.44it/s]
+Computing transition probabilities:   0%|          | 0/71 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 71/71 [00:00<00:00, 1192.33it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 9146.22it/s]
+Computing transition probabilities:   0%|          | 0/13 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 13/13 [00:00<00:00, 15994.71it/s]
+Computing transition probabilities:   0%|          | 0/31 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 31/31 [00:00<00:00, 13158.93it/s]
+Computing transition probabilities:   0%|          | 0/25 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 25/25 [00:00<00:00, 7636.56it/s]
+Computing transition probabilities:   0%|          | 0/75 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 75/75 [00:00<00:00, 5630.34it/s]
+Computing transition probabilities:   0%|          | 0/81 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 81/81 [00:00<00:00, 8318.77it/s]
+Computing transition probabilities:   0%|          | 0/82 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 82/82 [00:00<00:00, 6084.19it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 14513.16it/s]
+Computing transition probabilities:   0%|          | 0/80 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 80/80 [00:00<00:00, 4003.20it/s]
+Computing transition probabilities:   0%|          | 0/53 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 53/53 [00:00<00:00, 9780.80it/s]
+Computing transition probabilities:   0%|          | 0/47 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 47/47 [00:00<00:00, 5449.26it/s]
+Computing transition probabilities:   0%|          | 0/90 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 90/90 [00:00<00:00, 3568.51it/s]
+Computing transition probabilities:   0%|          | 0/95 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 95/95 [00:00<00:00, 9625.54it/s]
+Computing transition probabilities:   0%|          | 0/29 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 29/29 [00:00<00:00, 4117.91it/s]
+Computing transition probabilities:   0%|          | 0/60 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 60/60 [00:00<00:00, 10733.98it/s]
+Computing transition probabilities:   0%|          | 0/21 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 21/21 [00:00<00:00, 4674.44it/s]
+Computing transition probabilities:   0%|          | 0/52 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 52/52 [00:00<00:00, 8904.74it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 13414.62it/s]
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 7042.42it/s]
+Computing transition probabilities:   0%|          | 0/60 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 60/60 [00:00<00:00, 3052.47it/s]
+Computing transition probabilities:   0%|          | 0/17 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 17/17 [00:00<00:00, 15187.04it/s]
+Computing transition probabilities:   0%|          | 0/22 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 22/22 [00:00<00:00, 10699.76it/s]
+Computing transition probabilities:   0%|          | 0/33 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 33/33 [00:00<00:00, 13923.35it/s]
+Computing transition probabilities:   0%|          | 0/34 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 34/34 [00:00<00:00, 5981.06it/s]
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 1014.96it/s]
+Computing transition probabilities:   0%|          | 0/52 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 52/52 [00:00<00:00, 2124.22it/s]
+Computing transition probabilities:   0%|          | 0/64 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 64/64 [00:00<00:00, 3051.06it/s]
+Computing transition probabilities:   0%|          | 0/48 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 48/48 [00:00<00:00, 9950.90it/s]
+Computing transition probabilities:   0%|          | 0/102 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 102/102 [00:00<00:00, 1988.85it/s]
+Computing transition probabilities:   0%|          | 0/26 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 26/26 [00:00<00:00, 7051.99it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 7236.73it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 11915.64it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 8996.79it/s]
+Computing transition probabilities:   0%|          | 0/22 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 22/22 [00:00<00:00, 5936.35it/s]
+Computing transition probabilities:   0%|          | 0/39 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 39/39 [00:00<00:00, 11106.59it/s]
+Computing transition probabilities:   0%|          | 0/29 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 29/29 [00:00<00:00, 9821.14it/s]
+Computing transition probabilities:   0%|          | 0/23 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 23/23 [00:00<00:00, 12175.82it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 10200.16it/s]
+Computing transition probabilities:   0%|          | 0/27 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 27/27 [00:00<00:00, 13025.79it/s]
+Computing transition probabilities:   0%|          | 0/29 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 29/29 [00:00<00:00, 9099.63it/s]
+Computing transition probabilities:   0%|          | 0/54 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 54/54 [00:00<00:00, 3732.69it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 14665.40it/s]
+Computing transition probabilities:   0%|          | 0/21 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 21/21 [00:00<00:00, 14680.06it/s]
+Computing transition probabilities:   0%|          | 0/22 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 22/22 [00:00<00:00, 9351.85it/s]
+Computing transition probabilities:   0%|          | 0/32 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 32/32 [00:00<00:00, 3589.67it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 9877.67it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 10668.01it/s]
+Computing transition probabilities:   0%|          | 0/26 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 26/26 [00:00<00:00, 13835.56it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 8750.29it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 6379.65it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 14919.71it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 14163.96it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 16737.05it/s]
+Computing transition probabilities:   0%|          | 0/44 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 44/44 [00:00<00:00, 8282.07it/s]
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+========================k_idx:1========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 2791.87it/s]
+Computing transition probabilities:   0%|          | 0/81 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 81/81 [00:00<00:00, 7398.49it/s]
+Computing transition probabilities:   0%|          | 0/92 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 92/92 [00:00<00:00, 1601.23it/s]
+Computing transition probabilities:   0%|          | 0/44 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 44/44 [00:00<00:00, 4029.37it/s]
+Computing transition probabilities:   0%|          | 0/82 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 82/82 [00:00<00:00, 3416.30it/s]
+Computing transition probabilities:   0%|          | 0/70 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 70/70 [00:00<00:00, 3092.20it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 8027.38it/s]
+Computing transition probabilities:   0%|          | 0/59 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 59/59 [00:00<00:00, 8562.47it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 14271.19it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 14551.23it/s]
+Computing transition probabilities:   0%|          | 0/80 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 80/80 [00:00<00:00, 12685.99it/s]
+Computing transition probabilities:   0%|          | 0/84 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 84/84 [00:00<00:00, 11305.40it/s]
+Computing transition probabilities:   0%|          | 0/47 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 47/47 [00:00<00:00, 6699.71it/s]
+Computing transition probabilities:   0%|          | 0/95 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 95/95 [00:00<00:00, 4382.67it/s]
+Computing transition probabilities:   0%|          | 0/57 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 57/57 [00:00<00:00, 6220.25it/s]
+Computing transition probabilities:   0%|          | 0/60 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 60/60 [00:00<00:00, 6004.73it/s]
+Computing transition probabilities:   0%|          | 0/52 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 52/52 [00:00<00:00, 1382.60it/s]
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 5148.53it/s]
+Computing transition probabilities:   0%|          | 0/106 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 106/106 [00:00<00:00, 5445.68it/s]
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 1505.99it/s]
+Computing transition probabilities:   0%|          | 0/48 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 48/48 [00:00<00:00, 4162.22it/s]
+Computing transition probabilities:   0%|          | 0/102 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 102/102 [00:00<00:00, 4601.44it/s]
+Computing transition probabilities:   0%|          | 0/57 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 57/57 [00:00<00:00, 6363.63it/s]
+Computing transition probabilities:   0%|          | 0/34 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 34/34 [00:00<00:00, 5424.36it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 6579.93it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 7651.30it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 12595.51it/s]
+Computing transition probabilities:   0%|          | 0/19 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 19/19 [00:00<00:00, 9532.51it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 8656.97it/s]
+Computing transition probabilities:   0%|          | 0/23 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 23/23 [00:00<00:00, 715.24it/s]
+Computing transition probabilities:   0%|          | 0/39 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 39/39 [00:00<00:00, 3241.48it/s]
+Computing transition probabilities:   0%|          | 0/27 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 27/27 [00:00<00:00, 5906.55it/s]
+Computing transition probabilities:   0%|          | 0/18 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 18/18 [00:00<00:00, 10803.87it/s]
+Computing transition probabilities:   0%|          | 0/29 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 29/29 [00:00<00:00, 8606.44it/s]
+Computing transition probabilities:   0%|          | 0/54 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 54/54 [00:00<00:00, 4498.18it/s]
+Computing transition probabilities:   0%|          | 0/14 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 14/14 [00:00<00:00, 10733.00it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 2512.73it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 16432.14it/s]
+Computing transition probabilities:   0%|          | 0/6 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 6/6 [00:00<00:00, 12998.88it/s]
+Computing transition probabilities:   0%|          | 0/64 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 64/64 [00:00<00:00, 9849.04it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 11281.08it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 11263.66it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 11239.76it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 10951.19it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 10732.61it/s]
+Computing transition probabilities:   0%|          | 0/25 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 25/25 [00:00<00:00, 6693.32it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 13819.78it/s]
+Computing transition probabilities:   0%|          | 0/75 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 75/75 [00:00<00:00, 8468.78it/s]
+Computing transition probabilities:   0%|          | 0/51 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 51/51 [00:00<00:00, 5782.90it/s]
+Computing transition probabilities:   0%|          | 0/73 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 73/73 [00:00<00:00, 6347.63it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 7871.08it/s]
+Computing transition probabilities:   0%|          | 0/76 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 76/76 [00:00<00:00, 1512.62it/s]
+Computing transition probabilities:   0%|          | 0/143 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 143/143 [00:00<00:00, 2645.16it/s]
+Computing transition probabilities:   0%|          | 0/30 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 30/30 [00:00<00:00, 10177.88it/s]
+Computing transition probabilities:   0%|          | 0/180 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 180/180 [00:00<00:00, 5670.02it/s]
+Computing transition probabilities:   0%|          | 0/46 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 46/46 [00:00<00:00, 12902.10it/s]
+Computing transition probabilities:   0%|          | 0/129 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 129/129 [00:00<00:00, 6124.94it/s]
+Computing transition probabilities:   0%|          | 0/130 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 130/130 [00:00<00:00, 2118.12it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 5907.61it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 13311.41it/s]
+Computing transition probabilities:   0%|          | 0/135 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 135/135 [00:00<00:00, 8566.80it/s]
+Computing transition probabilities:   0%|          | 0/74 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 74/74 [00:00<00:00, 4766.18it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 8869.39it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 6743.25it/s]
+Computing transition probabilities:   0%|          | 0/69 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 69/69 [00:00<00:00, 4100.58it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 8183.12it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 10244.06it/s]
+Computing transition probabilities:   0%|          | 0/74 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 74/74 [00:00<00:00, 4724.83it/s]
+Computing transition probabilities:   0%|          | 0/100 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 100/100 [00:00<00:00, 3681.28it/s]
+Computing transition probabilities:   0%|          | 0/152 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 152/152 [00:00<00:00, 2989.13it/s]
+Computing transition probabilities:   0%|          | 0/95 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 95/95 [00:00<00:00, 6858.51it/s]
+Computing transition probabilities:   0%|          | 0/107 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 107/107 [00:00<00:00, 1967.98it/s]
+Computing transition probabilities:   0%|          | 0/19 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 19/19 [00:00<00:00, 7965.99it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 15240.93it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 8962.19it/s]
+Computing transition probabilities:   0%|          | 0/2 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 2/2 [00:00<00:00, 10565.00it/s]
+Computing transition probabilities:   0%|          | 0/2 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 2/2 [00:00<00:00, 11781.75it/s]
+Computing transition probabilities:   0%|          | 0/35 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 35/35 [00:00<00:00, 9172.17it/s]
+Computing transition probabilities:   0%|          | 0/26 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 26/26 [00:00<00:00, 14411.51it/s]
+Computing transition probabilities:   0%|          | 0/13 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 13/13 [00:00<00:00, 10560.90it/s]
+Computing transition probabilities:   0%|          | 0/28 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 28/28 [00:00<00:00, 16138.59it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 12518.44it/s]
+Computing transition probabilities:   0%|          | 0/6 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 6/6 [00:00<00:00, 21201.20it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 13189.64it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 9191.32it/s]
+Computing transition probabilities:   0%|          | 0/38 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 38/38 [00:00<00:00, 9012.87it/s]
+Computing transition probabilities:   0%|          | 0/43 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 43/43 [00:00<00:00, 9421.96it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 10424.52it/s]
+Computing transition probabilities:   0%|          | 0/21 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 21/21 [00:00<00:00, 7829.37it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 8301.44it/s]
+Computing transition probabilities:   0%|          | 0/36 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 36/36 [00:00<00:00, 3281.50it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 8845.01it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 12376.63it/s]
+Computing transition probabilities:   0%|          | 0/40 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 40/40 [00:00<00:00, 3641.52it/s]
+Computing transition probabilities:   0%|          | 0/31 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 31/31 [00:00<00:00, 9675.08it/s]
+Computing transition probabilities:   0%|          | 0/6 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 6/6 [00:00<00:00, 13120.87it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 10834.88it/s]
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+========================k_idx:2========================
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+Extracting 1-hop subgraphs...
+Done!
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/torch_geometric/deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Computing transition probabilities:   0%|          | 0/81 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 81/81 [00:00<00:00, 11822.34it/s]
+Computing transition probabilities:   0%|          | 0/73 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 73/73 [00:00<00:00, 4339.53it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 6000.43it/s]
+Computing transition probabilities:   0%|          | 0/76 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 76/76 [00:00<00:00, 1967.94it/s]
+Computing transition probabilities:   0%|          | 0/82 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 82/82 [00:00<00:00, 2828.30it/s]
+Computing transition probabilities:   0%|          | 0/143 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 143/143 [00:00<00:00, 3488.22it/s]
+Computing transition probabilities:   0%|          | 0/30 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 30/30 [00:00<00:00, 8084.63it/s]
+Computing transition probabilities:   0%|          | 0/129 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 129/129 [00:00<00:00, 5716.42it/s]
+Computing transition probabilities:   0%|          | 0/80 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 80/80 [00:00<00:00, 4521.06it/s]
+Computing transition probabilities:   0%|          | 0/53 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 53/53 [00:00<00:00, 4620.53it/s]
+Computing transition probabilities:   0%|          | 0/130 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 130/130 [00:00<00:00, 1895.17it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 11059.22it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 13261.67it/s]
+Computing transition probabilities:   0%|          | 0/74 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 74/74 [00:00<00:00, 13295.29it/s]
+Computing transition probabilities:   0%|          | 0/58 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 58/58 [00:00<00:00, 9880.98it/s]
+Computing transition probabilities:   0%|          | 0/52 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 52/52 [00:00<00:00, 4483.30it/s]
+Computing transition probabilities:   0%|          | 0/60 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 60/60 [00:00<00:00, 5378.12it/s]
+Computing transition probabilities:   0%|          | 0/22 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 22/22 [00:00<00:00, 6956.78it/s]
+Computing transition probabilities:   0%|          | 0/9 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 9/9 [00:00<00:00, 10104.05it/s]
+Computing transition probabilities:   0%|          | 0/52 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 52/52 [00:00<00:00, 5304.08it/s]
+Computing transition probabilities:   0%|          | 0/48 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 48/48 [00:00<00:00, 10862.55it/s]
+Computing transition probabilities:   0%|          | 0/152 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 152/152 [00:00<00:00, 6671.28it/s]
+Computing transition probabilities:   0%|          | 0/95 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 95/95 [00:00<00:00, 9523.85it/s]
+Computing transition probabilities:   0%|          | 0/107 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 107/107 [00:00<00:00, 1894.49it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 2637.28it/s]
+Computing transition probabilities:   0%|          | 0/19 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 19/19 [00:00<00:00, 6423.65it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 15638.72it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 15289.08it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 12398.18it/s]
+Computing transition probabilities:   0%|          | 0/2 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 2/2 [00:00<00:00, 11602.50it/s]
+Computing transition probabilities:   0%|          | 0/26 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 26/26 [00:00<00:00, 20533.21it/s]
+Computing transition probabilities:   0%|          | 0/13 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 13/13 [00:00<00:00, 7825.19it/s]
+Computing transition probabilities:   0%|          | 0/28 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 28/28 [00:00<00:00, 8772.73it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 16604.53it/s]
+Computing transition probabilities:   0%|          | 0/27 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 27/27 [00:00<00:00, 12957.23it/s]
+Computing transition probabilities:   0%|          | 0/29 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 29/29 [00:00<00:00, 3430.78it/s]
+Computing transition probabilities:   0%|          | 0/54 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 54/54 [00:00<00:00, 1916.81it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 11236.57it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 11177.36it/s]
+Computing transition probabilities:   0%|          | 0/22 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 22/22 [00:00<00:00, 8000.23it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 6003.01it/s]
+Computing transition probabilities:   0%|          | 0/36 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 36/36 [00:00<00:00, 6747.17it/s]
+Computing transition probabilities:   0%|          | 0/32 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 32/32 [00:00<00:00, 4798.46it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 10388.37it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 9946.97it/s]
+Computing transition probabilities:   0%|          | 0/31 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 31/31 [00:00<00:00, 7262.26it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 15782.89it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 13061.28it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 16169.25it/s]
+Computing transition probabilities:   0%|          | 0/97 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 97/97 [00:00<00:00, 2886.77it/s]
+Computing transition probabilities:   0%|          | 0/130 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 130/130 [00:00<00:00, 6610.17it/s]
+Computing transition probabilities:   0%|          | 0/92 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 92/92 [00:00<00:00, 1586.39it/s]
+Computing transition probabilities:   0%|          | 0/44 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 44/44 [00:00<00:00, 1114.90it/s]
+Computing transition probabilities:   0%|          | 0/70 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 70/70 [00:00<00:00, 1088.90it/s]
+Computing transition probabilities:   0%|          | 0/20 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 20/20 [00:00<00:00, 12345.27it/s]
+Computing transition probabilities:   0%|          | 0/119 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 119/119 [00:00<00:00, 5617.58it/s]
+Computing transition probabilities:   0%|          | 0/56 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 56/56 [00:00<00:00, 2499.00it/s]
+Computing transition probabilities:   0%|          | 0/21 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 21/21 [00:00<00:00, 11528.85it/s]
+Computing transition probabilities:   0%|          | 0/59 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 59/59 [00:00<00:00, 12574.39it/s]
+Computing transition probabilities:   0%|          | 0/41 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 41/41 [00:00<00:00, 4886.10it/s]
+Computing transition probabilities:   0%|          | 0/13 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 13/13 [00:00<00:00, 9341.43it/s]
+Computing transition probabilities:   0%|          | 0/84 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 84/84 [00:00<00:00, 1517.08it/s]
+Computing transition probabilities:   0%|          | 0/71 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 71/71 [00:00<00:00, 3150.34it/s]
+Computing transition probabilities:   0%|          | 0/56 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 56/56 [00:00<00:00, 3670.99it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 12679.27it/s]
+Computing transition probabilities:   0%|          | 0/57 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 57/57 [00:00<00:00, 4921.98it/s]
+Computing transition probabilities:   0%|          | 0/72 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 72/72 [00:00<00:00, 5439.50it/s]
+Computing transition probabilities:   0%|          | 0/54 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 54/54 [00:00<00:00, 4795.11it/s]
+Computing transition probabilities:   0%|          | 0/106 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 106/106 [00:00<00:00, 5787.05it/s]
+Computing transition probabilities:   0%|          | 0/201 [00:00<?, ?it/s]Computing transition probabilities:  94%|#########3| 188/201 [00:00<00:00, 1878.03it/s]Computing transition probabilities: 100%|##########| 201/201 [00:00<00:00, 1754.19it/s]
+Computing transition probabilities:   0%|          | 0/14 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 14/14 [00:00<00:00, 11744.05it/s]
+Computing transition probabilities:   0%|          | 0/57 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 57/57 [00:00<00:00, 7805.27it/s]
+Computing transition probabilities:   0%|          | 0/34 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 34/34 [00:00<00:00, 7147.47it/s]
+Computing transition probabilities:   0%|          | 0/11 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 11/11 [00:00<00:00, 18491.92it/s]
+Computing transition probabilities:   0%|          | 0/19 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 19/19 [00:00<00:00, 12366.82it/s]
+Computing transition probabilities:   0%|          | 0/8 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 8/8 [00:00<00:00, 8008.22it/s]
+Computing transition probabilities:   0%|          | 0/32 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 32/32 [00:00<00:00, 8047.59it/s]
+Computing transition probabilities:   0%|          | 0/23 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 23/23 [00:00<00:00, 7470.11it/s]
+Computing transition probabilities:   0%|          | 0/16 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 16/16 [00:00<00:00, 6847.84it/s]
+Computing transition probabilities:   0%|          | 0/5 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 5/5 [00:00<00:00, 22525.80it/s]
+Computing transition probabilities:   0%|          | 0/18 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 18/18 [00:00<00:00, 11960.94it/s]
+Computing transition probabilities:   0%|          | 0/18 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 18/18 [00:00<00:00, 17431.88it/s]
+Computing transition probabilities:   0%|          | 0/14 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 14/14 [00:00<00:00, 10392.97it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 15812.64it/s]
+Computing transition probabilities:   0%|          | 0/6 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 6/6 [00:00<00:00, 12589.21it/s]
+Computing transition probabilities:   0%|          | 0/64 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 64/64 [00:00<00:00, 6025.89it/s]
+Computing transition probabilities:   0%|          | 0/27 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 27/27 [00:00<00:00, 11149.57it/s]
+Computing transition probabilities:   0%|          | 0/10 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 10/10 [00:00<00:00, 11838.28it/s]
+Computing transition probabilities:   0%|          | 0/15 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 15/15 [00:00<00:00, 8924.05it/s]
+Computing transition probabilities:   0%|          | 0/24 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 24/24 [00:00<00:00, 10862.55it/s]
+Computing transition probabilities:   0%|          | 0/71 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 71/71 [00:00<00:00, 2616.30it/s]
+Computing transition probabilities:   0%|          | 0/12 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 12/12 [00:00<00:00, 13500.98it/s]
+Computing transition probabilities:   0%|          | 0/13 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 13/13 [00:00<00:00, 16860.22it/s]
+Computing transition probabilities:   0%|          | 0/3 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 3/3 [00:00<00:00, 11125.47it/s]
+Computing transition probabilities:   0%|          | 0/25 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 25/25 [00:00<00:00, 10909.03it/s]
+Computing transition probabilities:   0%|          | 0/75 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 75/75 [00:00<00:00, 5696.31it/s]
+Computing transition probabilities:   0%|          | 0/4 [00:00<?, ?it/s]Computing transition probabilities: 100%|##########| 4/4 [00:00<00:00, 7105.98it/s]
+/opt/conda/envs/SAMamba/lib/python3.10/site-packages/sklearn/utils/validation.py:1183: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+Three-fold cross-validation F1 score: 0.7739130434782608
+Three-fold cross-validation precision: 0.8282828282828283
+Three-fold cross-validation recall: 0.7266666666666667
+Three-fold cross-validation micro F1 score: 0.7878401360544217
+[[0.7346938775510203, 0.8367346938775511, 0.8125], [0.7346938775510203, 0.8571428571428571, 0.8125], [0.7551020408163265, 0.7959183673469388, 0.8125]]
+[[0.8, 0.9, 0.8571428571428571], [0.8, 0.9473684210526315, 0.8571428571428571], [0.8095238095238095, 0.8181818181818182, 0.8571428571428571]]
+[[0.64, 0.75, 0.75], [0.64, 0.75, 0.75], [0.68, 0.75, 0.75]]
+[[0.7111111111111111, 0.8181818181818182, 0.7999999999999999], [0.7111111111111111, 0.8372093023255814, 0.7999999999999999], [0.7391304347826089, 0.7826086956521738, 0.7999999999999999]]
+T-times cross validation test micro f1 score:0.7946428571428571 ~ 0.005554398509712428
+T-times cross validation test precision:0.8496114022429812 ~ 0.016401380433495615
+T-times cross validation test recall:0.7177777777777777 ~ 0.0062853936105470775
+T-times cross validation test f1 score:0.7777058303516005 ~ 0.003727888946940024

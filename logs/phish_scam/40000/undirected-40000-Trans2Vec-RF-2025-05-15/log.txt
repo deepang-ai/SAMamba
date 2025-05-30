@@ -1,0 +1,39 @@
+Loading Data...
+Edge Count: 1374388
+Average Degree: 68.7194
+Node Count: 40000
+Labeled Node Count: 163
+Trans2Vec Extracting Node Embeddings
+Done
+========================training times:0========================
+========================k_idx:0========================
+========================k_idx:1========================
+========================k_idx:2========================
+Three-fold cross-validation F1 score: 0.0
+Three-fold cross-validation precision: 0.0
+Three-fold cross-validation recall: 0.0
+Three-fold cross-validation micro F1 score: 0.9959250106196408
+========================training times:1========================
+========================k_idx:0========================
+========================k_idx:1========================
+========================k_idx:2========================
+Three-fold cross-validation F1 score: 0.0
+Three-fold cross-validation precision: 0.0
+Three-fold cross-validation recall: 0.0
+Three-fold cross-validation micro F1 score: 0.9959250162445001
+========================training times:2========================
+========================k_idx:0========================
+========================k_idx:1========================
+========================k_idx:2========================
+Three-fold cross-validation F1 score: 0.0
+Three-fold cross-validation precision: 0.0
+Three-fold cross-validation recall: 0.0
+Three-fold cross-validation micro F1 score: 0.9959250162445002
+[[0.9955002249887506, 0.996324908122703, 0.9959498987474686], [0.9952752362381881, 0.9958748968724218, 0.9966249156228906], [0.9952752362381881, 0.9959498987474686, 0.9965499137478437]]
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+T-times cross validation test micro f1 score:0.9959250143695471 ~ 2.6515841554324687e-09
+T-times cross validation test precision:0.0 ~ 0.0
+T-times cross validation test recall:0.0 ~ 0.0
+T-times cross validation test f1 score:0.0 ~ 0.0

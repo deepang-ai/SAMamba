@@ -1,0 +1,39 @@
+Loading Data...
+Edge Count: 1268798
+Average Degree: 84.58653333333334
+Node Count: 30000
+Labeled Node Count: 125
+Trans2Vec Extracting Node Embeddings
+Done
+========================training times:0========================
+========================k_idx:0========================
+========================k_idx:1========================
+========================k_idx:2========================
+Three-fold cross-validation F1 score: 0.02059079749742615
+Three-fold cross-validation precision: 0.026709401709401708
+Three-fold cross-validation recall: 0.016931216931216932
+Three-fold cross-validation micro F1 score: 0.9938666666666666
+========================training times:1========================
+========================k_idx:0========================
+========================k_idx:1========================
+========================k_idx:2========================
+Three-fold cross-validation F1 score: 0.03410059676044331
+Three-fold cross-validation precision: 0.048500881834215165
+Three-fold cross-validation recall: 0.026676829268292682
+Three-fold cross-validation micro F1 score: 0.9943
+========================training times:2========================
+========================k_idx:0========================
+========================k_idx:1========================
+========================k_idx:2========================
+Three-fold cross-validation F1 score: 0.02531645569620253
+Three-fold cross-validation precision: 0.03333333333333333
+Three-fold cross-validation recall: 0.02040816326530612
+Three-fold cross-validation micro F1 score: 0.9944333333333333
+[[0.9933, 0.9942, 0.9941], [0.9937, 0.9956, 0.9936], [0.9953, 0.9953, 0.9927]]
+[[0.041666666666666664, 0.0, 0.038461538461538464], [0.0, 0.07142857142857142, 0.07407407407407407], [0.0, 0.0, 0.1]]
+[[0.022222222222222223, 0.0, 0.02857142857142857], [0.0, 0.03125, 0.04878048780487805], [0.0, 0.0, 0.061224489795918366]]
+[[0.028985507246376812, 0.0, 0.03278688524590164], [0.0, 0.043478260869565216, 0.058823529411764705], [0.0, 0.0, 0.0759493670886076]]
+T-times cross validation test micro f1 score:0.9941999999999999 ~ 0.00024190601174532705
+T-times cross validation test precision:0.036181205625650074 ~ 0.009121400987148996
+T-times cross validation test recall:0.02133873648827191 ~ 0.004032676104740413
+T-times cross validation test f1 score:0.026669283318023998 ~ 0.005597694523195961

@@ -1,0 +1,39 @@
+Loading Data...
+Edge Count: 1268798
+Average Degree: 84.58653333333334
+Node Count: 30000
+Labeled Node Count: 125
+DeepWalk Extracting Node Embeddings
+Done
+========================training times:0========================
+========================k_idx:0========================
+========================k_idx:1========================
+========================k_idx:2========================
+Three-fold cross-validation F1 score: 0.0
+Three-fold cross-validation precision: 0.0
+Three-fold cross-validation recall: 0.0
+Three-fold cross-validation micro F1 score: 0.9958333333333335
+========================training times:1========================
+========================k_idx:0========================
+========================k_idx:1========================
+========================k_idx:2========================
+Three-fold cross-validation F1 score: 0.020202020202020204
+Three-fold cross-validation precision: 0.3333333333333333
+Three-fold cross-validation recall: 0.010416666666666666
+Three-fold cross-validation micro F1 score: 0.9958666666666667
+========================training times:2========================
+========================k_idx:0========================
+========================k_idx:1========================
+========================k_idx:2========================
+Three-fold cross-validation F1 score: 0.0
+Three-fold cross-validation precision: 0.0
+Three-fold cross-validation recall: 0.0
+Three-fold cross-validation micro F1 score: 0.9958333333333332
+[[0.9955, 0.9955, 0.9965], [0.9948, 0.9969, 0.9959], [0.9967, 0.9957, 0.9951]]
+[[0.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 0.0]]
+[[0.0, 0.0, 0.0], [0.0, 0.03125, 0.0], [0.0, 0.0, 0.0]]
+[[0.0, 0.0, 0.0], [0.0, 0.06060606060606061, 0.0], [0.0, 0.0, 0.0]]
+T-times cross validation test micro f1 score:0.9958444444444444 ~ 1.5713484026365992e-05
+T-times cross validation test precision:0.1111111111111111 ~ 0.15713484026367722
+T-times cross validation test recall:0.003472222222222222 ~ 0.004910463758239913
+T-times cross validation test f1 score:0.006734006734006735 ~ 0.009523323652344077

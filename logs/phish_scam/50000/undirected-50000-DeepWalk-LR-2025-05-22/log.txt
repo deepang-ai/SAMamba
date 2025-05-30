@@ -1,0 +1,39 @@
+Loading Data...
+Edge Count: 1566301
+Average Degree: 62.65204
+Node Count: 50000
+Labeled Node Count: 197
+DeepWalk Extracting Node Embeddings
+Done
+========================training times:0========================
+========================k_idx:0========================
+========================k_idx:1========================
+========================k_idx:2========================
+Three-fold cross-validation F1 score: 0.0
+Three-fold cross-validation precision: 0.0
+Three-fold cross-validation recall: 0.0
+Three-fold cross-validation micro F1 score: 0.9955199947963119
+========================training times:1========================
+========================k_idx:0========================
+========================k_idx:1========================
+========================k_idx:2========================
+Three-fold cross-validation F1 score: 0.012944983818770225
+Three-fold cross-validation precision: 0.027777777777777776
+Three-fold cross-validation recall: 0.008438818565400843
+Three-fold cross-validation micro F1 score: 0.9954200099965359
+========================training times:2========================
+========================k_idx:0========================
+========================k_idx:1========================
+========================k_idx:2========================
+Three-fold cross-validation F1 score: 0.008032128514056226
+Three-fold cross-validation precision: 0.041666666666666664
+Three-fold cross-validation recall: 0.0044444444444444444
+Three-fold cross-validation micro F1 score: 0.995779999196608
+[[0.996340073198536, 0.994960100797984, 0.9952598103924157], [0.994060118797624, 0.9962800743985121, 0.9959198367934717], [0.996460070798584, 0.9951400971980561, 0.9957398295931837]]
+[[0.0, 0.0, 0.0], [0.08333333333333333, 0.0, 0.0], [0.0, 0.125, 0.0]]
+[[0.0, 0.0, 0.0], [0.02531645569620253, 0.0, 0.0], [0.0, 0.013333333333333334, 0.0]]
+[[0.0, 0.0, 0.0], [0.038834951456310676, 0.0, 0.0], [0.0, 0.024096385542168676, 0.0]]
+T-times cross validation test micro f1 score:0.995573334663152 ~ 0.00015172763336104538
+T-times cross validation test precision:0.02314814814814815 ~ 0.017322487901731208
+T-times cross validation test recall:0.0042944210032817625 ~ 0.0034467661142595874
+T-times cross validation test f1 score:0.006992370777608818 ~ 0.005335664509064291
