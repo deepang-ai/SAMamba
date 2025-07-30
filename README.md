@@ -15,7 +15,6 @@ gather information about high-order neighborhoods.
 
 
 
-
 ## Data Description
 ### lw_AIG dataset
 
@@ -31,6 +30,17 @@ Preparation:  Download lw_AIG dataset in PYG format from this [page](https://jjz
 python data_transform.py
 ```
 
+```tex
+@article{zhou2022behavior,
+  title={Behavior-aware account de-anonymization on Ethereum interaction graph},
+  author={Zhou, Jiajun and Hu, Chenkai and Chi, Jianlei and Wu, Jiajing and Shen, Meng and Xuan, Qi},
+  journal={IEEE Transactions on Information Forensics and Security},
+  volume={17},
+  pages={3433--3448},
+  year={2022},
+  publisher={IEEE}
+}
+```
 ### EPTransNet dataset
 
 Size: The original graph includes 2,973,382 nodes and 13,551,214 edges, and the number of labeled phishing nodes is 1,157.
@@ -43,8 +53,18 @@ Preparation:  Download EPTransNet dataset from this [page](https://www.kaggle.co
 ```
 python sample.py --sample-size 30000
 ```
-
-
+```tex
+@article{chen2020phishing,
+  title={Phishing scams detection in ethereum transaction network},
+  author={Chen, Liang and Peng, Jiaying and Liu, Yang and Li, Jintang and Xie, Fenfang and Zheng, Zibin},
+  journal={ACM Transactions on Internet Technology (TOIT)},
+  volume={21},
+  number={1},
+  pages={1--16},
+  year={2020},
+  publisher={ACM New York, NY, USA}
+}
+```
 ## Benchmark
 ### lw_AIG dataset
  Summary of classification performance in terms of Micro F1-score on the lw-AIG dataset. The highest performance is marked in bold, and the second best performance is underlined.
