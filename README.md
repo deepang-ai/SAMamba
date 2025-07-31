@@ -1,8 +1,6 @@
 # SAMamba: Structure-Aware Mamba for Ethereum Fraud Detection
 
-
-Official implementation of SAMamba: Structure-Aware Mamba for Ethereum Fraud Detection.
-
+> 🎉 This work is published in [IEEE Transactions on Information Forensics and Security](https://ieeexplore.ieee.org/document/11080015)
 
 ## Network Architecture
 
